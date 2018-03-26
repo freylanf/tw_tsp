@@ -5,7 +5,7 @@ set(CMAKE_CXX_STANDARD 11)
 
 include_directories(src)
 
-set(SOURCE_FILES main.cpp)
+set(SOURCE_FILES TwTspMain.cpp)
 add_executable(${CMAKE_PROJECT_NAME}_run ${SOURCE_FILES})
 
 

@@ -55,6 +55,11 @@ class FptSolver {
   tuple<size_t, tuple<size_t, size_t, size_t>> solve();
   FRIEND_TEST(FptSolverTest, solve);
 
+  // Method to compute the optimal tour for a solved instance
+  // by going backwards through constraints.
+  vector<Location> const getTour(tuple<size_t, size_t, size_t > tourEnd) const;
+  FRIEND_TEST(FptSolverTest, getTour);
+
   // Destructor
   ~FptSolver();
 
@@ -78,10 +83,6 @@ class FptSolver {
   // revenue >= revenue'. Where (t, P, revenue) is the new Constraint).
   void updateConstraints(Constraint &newConstr, size_t row, size_t col);
   FRIEND_TEST(FptSolverTest, updateConstraints);
-  // Method to compute the optimal tour for a solved instance
-  // by going backwards through constraints.
-  vector<Location> const getTour(tuple<size_t, size_t, size_t > tourEnd) const;
-  FRIEND_TEST(FptSolverTest, getTour);
 };
 
 #endif //TW_TSP_FPTSOLVER_H
