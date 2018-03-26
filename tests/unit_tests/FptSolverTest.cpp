@@ -5,6 +5,7 @@
 
 #include <gtest/gtest.h>
 #include "FptSolver.h"
+#include <iostream>
 
 
 // _____________________________________________________________________________
@@ -120,3 +121,32 @@ TEST(FptSolverTest, updateConstraints) {
   ASSERT_EQ(s._constraints[2][3][0].time, 3);
   ASSERT_EQ(s._constraints[2][3][0].revenue, 6);
 }
+
+// _____________________________________________________________________________
+TEST(FptSolverTest, getTour) {
+  Graph g;
+  g.buildFromFile("test_data/example_graph4.graph", false);
+  FptSolver s = FptSolver(g);
+  auto tourEnd = std::get<1>(s.solve());
+  auto path = s.getTour(tourEnd);
+  ASSERT_EQ(path.size(), 3);
+  ASSERT_EQ(path[0].id, 2);
+  ASSERT_EQ(path[1].id, 3);
+  ASSERT_EQ(path[2].id, 4);
+
+  ASSERT_EQ(path[0].arrival, 0);
+  ASSERT_EQ(path[1].arrival, 6);
+  ASSERT_EQ(path[2].arrival, 13);
+
+  ASSERT_EQ(path[0].prize, 3);
+  ASSERT_EQ(path[1].prize, 6);
+  ASSERT_EQ(path[2].prize, 3);
+
+  ASSERT_EQ(path[0].leave, 1);
+  ASSERT_EQ(path[1].leave, 7);
+  ASSERT_EQ(path[2].leave, 14);
+
+  ASSERT_EQ(path[0].name, "node2");
+  ASSERT_EQ(path[1].name, "node3");
+  ASSERT_EQ(path[2].name, "node4");
+ }

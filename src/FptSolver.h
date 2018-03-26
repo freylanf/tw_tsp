@@ -37,7 +37,8 @@ struct Location {
   size_t prize;
   float arrival;
   float leave;
-  tuple<float, float> geoLoc;
+  float latitude;
+  float longitude;
   string name;
 
 };
@@ -80,6 +81,7 @@ class FptSolver {
   // Method to compute the optimal tour for a solved instance
   // by going backwards through constraints.
   vector<Location> const getTour(tuple<size_t, size_t, size_t > tourEnd) const;
+  FRIEND_TEST(FptSolverTest, getTour);
 };
 
 #endif //TW_TSP_FPTSOLVER_H

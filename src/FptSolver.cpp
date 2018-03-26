@@ -15,10 +15,7 @@ bool Constraint::operator>(const Constraint &newConstr) {
     std::set_intersection(newConstr.prohibJobs.begin(), newConstr.prohibJobs.end(),
                           this->prohibJobs.begin(), this->prohibJobs.end(),
                           std::inserter(intersection, intersection.begin()));
-    if (intersection == newConstr.prohibJobs) {
-      return true;
-    }
-    return false;
+    return intersection == newConstr.prohibJobs;
   }
 }
 
@@ -143,7 +140,7 @@ void FptSolver::updateConstraints(Constraint &newConstr, const size_t row,
       updatedCons.push_back(constr);
     }
   }
-  for (auto constr : updatedCons) {
+  for (const auto &constr : updatedCons) {
     if (newConstr > constr) {
       newisGood = false;
       break;
@@ -158,5 +155,34 @@ void FptSolver::updateConstraints(Constraint &newConstr, const size_t row,
 // _____________________________________________________________________________
 vector<Location> const FptSolver::getTour(tuple<size_t,
                                                 size_t, size_t> tourEnd) const {
-  return vector<Location>();
+  vector<Location> reversePath;
+  size_t level = std::get<0>(tourEnd);
+  size_t job = std::get<1>(tourEnd);
+  size_t constrId = std::get<2>(tourEnd);
+
+  while (level > 0) {
+    Constraint actualConstr = _constraints[level][job][constrId];
+    auto arrival = actualConstr.time;
+    auto leave = arrival + _graph.getDurations()->at(job);
+    auto prize = _graph.getPrizes()->at(job);
+    auto geoLoc = _graph.getLocations()->at(job);
+    auto lat = std::get<0>(geoLoc);
+    auto longit = std::get<1>(geoLoc);
+    auto  name = _graph.getNodeNames()->at(job);
+    Location node = {job, prize, arrival, leave, lat, longit, name};
+    reversePath.push_back(node);
+
+    // get predecessor on the tour.
+    job = std::get<0>(actualConstr.predecessor);
+    constrId = std::get<1>(actualConstr.predecessor);
+    level--;
+  }
+
+  vector<Location> path;
+  while (!reversePath.empty()) {
+    auto loc = reversePath.back();
+        path.push_back(loc);
+    reversePath.pop_back();
+  }
+  return path;
 }
