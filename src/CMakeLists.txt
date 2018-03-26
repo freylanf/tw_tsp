@@ -1,9 +1,8 @@
 project(${CMAKE_PROJECT_NAME}_lib)
 
-set(HEADER_FILES
-)
-set(SOURCE_FILES
-)
+set(HEADER_FILES Graph.h)
+set(SOURCE_FILES Graph.cpp)
+
 
 if (EXISTS ${SOURCE_FILES})
     # The library contains header and source files.
