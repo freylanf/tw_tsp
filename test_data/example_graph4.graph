@@ -1,0 +1,19 @@
+# Representation of a PW_TWTSP instance.
+# First row: number of nodes.
+# Following #nodes rows give nodeId, geo-location, release time
+# deadline, duration and prize.
+# Matrix of distances between nodes (triangle inequality holds).
+5
+0	starting-point	(0.0,0.0)	0	0	0	0
+1	node1	(0.0, 0.0)	5	10	1	1
+2	node2	(0.0, 0.0)	0	4	1	3
+3	node3	(0.0, 0.0)	6	7	1	6
+4	node4	(0.0, 0.0)	4	14	1	3
+0 2 3 3 4
+2 0 4 5 5
+3 4 0 5 7
+3 5 5 0 6
+4 5 7 6 0
+# This instance is for testing. There is only one optimal tour
+# leading to a total prize of 9.
+# v_3(6) --> v_4(13)

@@ -1,25 +1,26 @@
 //
-// Created by Felix Freyland on 22.03.18.
-// E-mail: felixfreyland@gmx.de
-//
+// Copyright 2018
+// Author: Felix Freyland <felix.freyland@gmx.de>
 
-#ifndef TW_TSP_FPTSOLVER_H
-#define TW_TSP_FPTSOLVER_H
+#ifndef FPTSOLVER_H_
+#define FPTSOLVER_H_
 
 #include <gtest/gtest.h>
 #include "Graph.h"
 #include <set>
 #include <algorithm>
-
+#include <string>
+#include <tuple>
+#include <vector>
 
 using std::vector;
 using std::set;
 using std::string;
 using std::tuple;
 
-//Structure for a single constraint of a partial tour.
+// Structure for a single constraint of a partial tour.
 struct Constraint {
-  float time;
+  double time;
   size_t revenue;
   tuple<size_t, size_t> predecessor;
   set<size_t> prohibJobs;
@@ -29,18 +30,6 @@ struct Constraint {
   // a larger revenue and its prohib set is contained in the
   // constraints prohib set.
   bool operator>(const Constraint &newConstr);
-};
-
-// Structure for a location in the calculated tour.
-struct Location {
-  size_t id;
-  size_t prize;
-  float arrival;
-  float leave;
-  float latitude;
-  float longitude;
-  string name;
-
 };
 
 // Class to solve PC_TW_TSP instance with a dynamic programming
@@ -64,7 +53,7 @@ class FptSolver {
   ~FptSolver();
 
  private:
-  Graph _graph; // the graph to solve.
+  Graph _graph;  // the graph to solve.
   vector<vector<vector<Constraint>>> _constraints;
 
   // Initialize a 2D field for the constraints.
@@ -73,7 +62,7 @@ class FptSolver {
 
   // Method to check whether node2 has to be added to prohibited
   // jobs of a partial tour ending in node1.
-  bool checkProhibited (size_t node1, size_t node2, float time) const;
+  bool checkProhibited(size_t node1, size_t node2, double time) const;
   FRIEND_TEST(FptSolverTest, checkProhibited);
 
   // Updates the set of constraints for a partial tour.
@@ -81,8 +70,8 @@ class FptSolver {
   // All constraints (t', P', revenue') in the set of constraints
   // at idx (row, node) are removed if t <= t', P subset P' and
   // revenue >= revenue'. Where (t, P, revenue) is the new Constraint).
-  void updateConstraints(Constraint &newConstr, size_t row, size_t col);
+  void updateConstraints(Constraint newConstr, size_t row, size_t col);
   FRIEND_TEST(FptSolverTest, updateConstraints);
 };
 
-#endif //TW_TSP_FPTSOLVER_H
+#endif  // FPTSOLVER_H_

@@ -1,7 +1,5 @@
-//
-// Created by Felix Freyland on 18.03.18.
-// E-mail: felixfreyland@gmx.de
-//
+// Copyright 2018
+// Author: Felix Freyland <felix.freyland@gmx.de>
 
 #include <gtest/gtest.h>
 #include "Graph.h"
@@ -136,5 +134,4 @@ TEST(GraphTest, buildFromFile) {
   ASSERT_FLOAT_EQ(g1._distances[3][1], 3.09);
   ASSERT_FLOAT_EQ(g1._distances[3][2], 0.96);
   ASSERT_FLOAT_EQ(g1._distances[3][3], 0.0);
-
 }

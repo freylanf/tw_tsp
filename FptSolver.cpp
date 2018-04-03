@@ -1,20 +1,22 @@
-//
-// Created by Felix Freyland on 22.03.18.
-// E-mail: felixfreyland@gmx.de
-//
+// Copyright 2018
+// Author: Felix Freyland <felix.freyland@gmx.de>
 
+#include <tuple>
+#include <algorithm>
+#include <vector>
+#include <set>
 #include "FptSolver.h"
 
 // _____________________________________________________________________________
 bool Constraint::operator>(const Constraint &newConstr) {
   if (newConstr.time > this->time || newConstr.revenue < this->revenue) {
     return false;
-  }
-  else {
+  } else {
     std::set<size_t> intersection;
-    std::set_intersection(newConstr.prohibJobs.begin(), newConstr.prohibJobs.end(),
-                          this->prohibJobs.begin(), this->prohibJobs.end(),
-                          std::inserter(intersection, intersection.begin()));
+    std::set_intersection(newConstr.prohibJobs.begin(),
+                    newConstr.prohibJobs.end(),
+                    this->prohibJobs.begin(), this->prohibJobs.end(),
+                    std::inserter(intersection, intersection.begin()));
     return intersection == newConstr.prohibJobs;
   }
 }
@@ -32,7 +34,7 @@ FptSolver::FptSolver(Graph graph) {
 void FptSolver::initConstraints() {
   size_t dimension = _graph.getNodesNum();
   // Initialize empty field for constraints.
-  for (size_t i = 0; i < dimension; i++ ) {
+  for (size_t i = 0; i < dimension; i++) {
     vector<vector<Constraint>> level = {};
     for (size_t j = 0; j < dimension; j++) {
       vector<Constraint> constraint = {};
@@ -43,7 +45,7 @@ void FptSolver::initConstraints() {
 
   // initialise constraints at first level.
   for (size_t node = 1; node < dimension; node++) {
-    auto time = (float)(_graph.getReleases()->at(node));
+    auto time = static_cast<double>(_graph.getReleases()->at(node));
     size_t revenue = _graph.getPrizes()->at(node);
     tuple<size_t, size_t> pred {0, 0};
     set<size_t> prohibJ = {node};
@@ -57,8 +59,8 @@ tuple<size_t, tuple<size_t, size_t, size_t>> FptSolver::solve() {
   initConstraints();
   size_t max_prize = 0;
   // to remember the (level, node_id, constraint_id) of the so far best tour.
-  tuple<size_t, size_t , size_t>  bestTourEnd (1, 0, 0);
-  bool done = false; // to check if there is any continuation.
+  tuple<size_t, size_t, size_t>  bestTourEnd(1, 0, 0);
+  bool done = false;  // to check if there is any continuation.
   size_t nodesNum = _graph.getNodesNum();
 
   // different levels.
@@ -78,16 +80,17 @@ tuple<size_t, tuple<size_t, size_t, size_t>> FptSolver::solve() {
           std::get<1>(bestTourEnd) = job;
           std::get<2>(bestTourEnd) = constrId;
         }
-        //all jobs at next level.
+        // all jobs at next level.
         for (size_t successor = 1; successor < nodesNum; successor++) {
           if (constr.prohibJobs.count(successor) != 0) {continue;}
-          float timeAtNext = constr.time
-              + (float)(_graph.getDurations()->at(job))
+          double timeAtNext = constr.time
+              + static_cast<double>(_graph.getDurations()->at(job))
               + (_graph.getDistances()->at(job))[successor]
-              + (float)(_graph.getDurations()->at(successor));
+              + static_cast<double>(_graph.getDurations()->at(successor));
 
           set<size_t> newProhib {successor};
-          if (timeAtNext > (float)(_graph.getDeadlines()->at(successor))) {
+          size_t deadline = _graph.getDeadlines()->at(successor);
+          if (timeAtNext > static_cast<double>(deadline)) {
             continue;
           }
           // check if new job has to be added to prohibited Jobs.
@@ -95,15 +98,15 @@ tuple<size_t, tuple<size_t, size_t, size_t>> FptSolver::solve() {
             if (checkProhibited(successor, tourJob, timeAtNext)) {
               newProhib.insert(tourJob);
             }
-
           }
-          done = false; // a continuation is possible;
+          done = false;  // a continuation is possible;
 
           size_t newPrize = constr.revenue + _graph.getPrizes()->at(successor);
-          auto sucRelease = (float)(_graph.getReleases()->at(successor));
-          auto duration = (float)(_graph.getDurations()->at(job));
-          float travelTime = _graph.getDistances()->at(job)[successor];
-          float newTime = std::max(sucRelease, constr.time
+          auto sucRelease = static_cast<double>(_graph.getReleases()
+                                               ->at(successor));
+          auto duration = static_cast<double>(_graph.getDurations()->at(job));
+          double travelTime = _graph.getDistances()->at(job)[successor];
+          double newTime = std::max(sucRelease, constr.time
                                    + duration + travelTime);
 
           tuple<size_t , size_t > predecessor {job, constrId};
@@ -119,20 +122,19 @@ tuple<size_t, tuple<size_t, size_t, size_t>> FptSolver::solve() {
 
 // _____________________________________________________________________________
 bool FptSolver::checkProhibited(const size_t node1, const size_t node2,
-                                const float time) const {
-  auto release = (float)(_graph.getReleases()->at(node1));
-  auto duration1 = (float)(_graph.getDurations()->at(node1));
-  auto duration2 = (float)(_graph.getDurations()->at(node2));
-  float earliestStart = std::max(time, release + duration1);
-  float travelTime = _graph.getDistances()->at(node1)[node2];
-  float deadline = _graph.getDeadlines()->at(node2);
+                                const double time) const {
+  auto release = static_cast<double>(_graph.getReleases()->at(node1));
+  auto duration1 = static_cast<double>(_graph.getDurations()->at(node1));
+  auto duration2 = static_cast<double>(_graph.getDurations()->at(node2));
+  double earliestStart = std::max(time, release + duration1);
+  double travelTime = _graph.getDistances()->at(node1)[node2];
+  double deadline = _graph.getDeadlines()->at(node2);
   return earliestStart + travelTime + duration2 <= deadline;
 }
 
 // _____________________________________________________________________________
-void FptSolver::updateConstraints(Constraint &newConstr, const size_t row,
+void FptSolver::updateConstraints(Constraint newConstr, const size_t row,
                                   const size_t col) {
-
   bool newisGood = true;
   vector<Constraint> updatedCons;
   for (auto constr : _constraints[row][col]) {

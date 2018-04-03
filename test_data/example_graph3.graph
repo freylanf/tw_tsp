@@ -1,0 +1,11 @@
+# A virtual startpoint with starting time 00:00 am is included. 
+# Thus traveling distance is 0 to all locations and a tour can immediately start at any location.
+4
+0	starting-point	(0.0, 0.0)	0	0	0	0
+1	40 Greg Urwin Circuit, Casey	(-35.1552247, 149.1015429)	735	780	15	3
+2	11 Helmrich Street, Moncrieff	(-35.1559098, 149.1071681)	630	840	15	2
+3	129 Slim Dusty Circuit, Moncrieff, ACT	(-35.1560337, 149.1097125)	630	840	15	1
+0 0 0 0
+0 0.0 3.98 3.02
+0 4.09 0.0 1.01
+0 3.09 0.96 0.0

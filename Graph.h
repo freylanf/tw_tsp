@@ -1,10 +1,8 @@
-//
-// Created by Felix Freyland on 18.03.18.
-// E-mail: felixfreyland@gmx.de
-//
+// Copyright 2018
+// Author: Felix Freyland <felix.freyland@gmx.de>
 
-#ifndef TW_TSP_GRAPH_H_
-#define TW_TSP_GRAPH_H_
+#ifndef GRAPH_H_
+#define GRAPH_H_
 
 #include <gtest/gtest.h>
 #include <string>
@@ -14,6 +12,17 @@
 using std::string;
 using std::vector;
 using std::tuple;
+
+// Structure for a location in the graph.
+struct Location {
+  size_t id;
+  size_t prize;
+  double arrival;
+  double leave;
+  double latitude;
+  double longitude;
+  string name;
+};
 
 // A class for a graph TW_TSP instance.
 class Graph {
@@ -27,26 +36,27 @@ class Graph {
   const vector<size_t>* getReleases() const;
   const vector<size_t>* getPrizes() const;
   const vector<string>* getNodeNames() const;
-  const vector<vector<float>>* getDistances() const;
-  const vector<tuple<float, float>>* getLocations() const;
+  const vector<vector<double>>* getDistances() const;
+  const vector<tuple<double, double>>* getLocations() const;
   const vector<size_t>* getDurations() const;
 
   // To read the graph from a text file.
-  void buildFromFile(string fileName, bool unitPrizes=true);
+  void buildFromFile(string fileName, bool unitPrizes = true);
   FRIEND_TEST(GraphTest, buildFromFile);
 
   // Destructor
   ~Graph();
+
  private:
   size_t _numNodes;
   vector<size_t> _releases;
   vector<size_t> _deadlines;
   vector<size_t> _durations;
   vector<size_t> _prizes;
-  vector<vector<float>> _distances;
+  vector<vector<double>> _distances;
   vector<string> _nodeNames;
-  vector<tuple<float, float>> _geoLocations;
+  vector<tuple<double, double>> _geoLocations;
 };
 
-#endif // TW_TSP_GRAPH_H_
+#endif  // GRAPH_H_
 

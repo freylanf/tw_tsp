@@ -1,0 +1,15 @@
+# Representation of a TW_TSP instance.
+# First row: number of nodes.
+# Following #nodes rows give nodeId, geo-location, release time
+# deadline, duration and prize.
+# Matrix of distances between nodes (triangle inequality holds).
+3
+0	starting-point	(0.0, 0.0)	0	0	0	0
+1	node1	(0.0, 0.0)	4	6	2	1
+2	node2	(0.0, 0.0)	8	12	2	1
+0 5 10
+5 0 8
+10 8 0
+# This instance is for testing. There is a simple optimal tour
+# leading to a total prize of 1.
+# v_2(10)

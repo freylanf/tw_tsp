@@ -1,10 +1,11 @@
-//
-// Created by Felix Freyland on 18.03.18.
-// E-mail: felixfreyland@gmx.de
-//
+// Copyright 2018
+// Author: Felix Freyland <felix.freyland@gmx.de>
 
 #include <fstream>
 #include <iostream>
+#include <string>
+#include <tuple>
+#include <vector>
 #include "Graph.h"
 
 // ____________________________________________________________________________
@@ -40,11 +41,11 @@ vector<string> const * Graph::getNodeNames() const {
   return &_nodeNames;
 }
 
-vector<vector<float>> const * Graph::getDistances() const {
+vector<vector<double>> const * Graph::getDistances() const {
   return &_distances;
 }
 
-vector<tuple<float, float>> const * Graph::getLocations() const {
+vector<tuple<double, double>> const * Graph::getLocations() const {
   return &_geoLocations;
 }
 
@@ -63,20 +64,20 @@ void Graph::buildFromFile(const string fileName, const bool unitPrizes) {
   std::string line;
   while (true) {
     std::getline(file, line);
-    if (file.eof()) break;
+    // if (file.eof()) break;
 
     // Skip the header in graph file.
     if (line.at(0) == '#') continue;
 
     // Get the number of nodes in Graph.
-    if (line.size() == 1) {
+    if (isdigit(line[0])) {
       _numNodes = atoi(line.c_str());
       break;
     }
   }
 
   int currentLine = 0;
-  while(currentLine < _numNodes) {
+  while (currentLine < _numNodes) {
     // read the line and write to members of graph.
     std::getline(file, line);
     vector<string> tokens;
@@ -94,9 +95,9 @@ void Graph::buildFromFile(const string fileName, const bool unitPrizes) {
     _nodeNames.push_back(tokens[1]);
     string geoLoc = tokens[2].substr(1, tokens[2].size() - 2);
     int sep = geoLoc.find(",");
-    float lat = std::stof(geoLoc.substr(0, sep));
-    float lon = std::stof(geoLoc.substr(sep + 1, string::npos ));
-    const tuple<float, float> geoL (lat, lon);
+    double lat = std::stof(geoLoc.substr(0, sep));
+    double lon = std::stof(geoLoc.substr(sep + 1, string::npos));
+    const tuple<double, double> geoL(lat, lon);
     _geoLocations.push_back(geoL);
     string release = tokens[3];
     _releases.push_back(atoi(release.c_str()));
@@ -108,23 +109,22 @@ void Graph::buildFromFile(const string fileName, const bool unitPrizes) {
     if (unitPrizes) {
       if (currentLine == 0) {
         _prizes.push_back(0);
-      }
-      else {
+      } else {
         _prizes.push_back(1);
-      }
+        }
     } else {
       string prize = tokens[6];
       _prizes.push_back(atoi(prize.c_str()));
       }
 
-    currentLine ++;
+    currentLine++;
   }
 
   // Read the distance matrix.
   while (true) {
     std::getline(file, line);
     if ((file.eof()) || line.at(0) == '#') break;
-    vector<float> row;
+    vector<double> row;
     while (true) {
       int pos = line.find(" ");
       if (pos == string::npos) {
@@ -140,7 +140,4 @@ void Graph::buildFromFile(const string fileName, const bool unitPrizes) {
 
 // ____________________________________________________________________________
 Graph::~Graph() {
-
 }
-
-

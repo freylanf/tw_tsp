@@ -1,12 +1,11 @@
-//
-// Created by Felix Freyland on 18.03.18.
-// E-mail: felixfreyland@gmx.de
-//
+// Copyright 2018
+// Author: Felix Freyland <felix.freyland@gmx.de>
 
 #include <gtest/gtest.h>
-#include "FptSolver.h"
 #include <iostream>
-
+#include <tuple>
+#include <set>
+#include "./FptSolver.h"
 
 // _____________________________________________________________________________
 TEST(FptSolverTest, initConstraints) {
@@ -39,7 +38,6 @@ TEST(FptSolverTest, checkProhibited) {
   FptSolver solver = FptSolver(g);
   solver.initConstraints();
   ASSERT_FALSE(solver.checkProhibited(1, 2, 5));
-
 }
 
 // _____________________________________________________________________________
@@ -149,4 +147,4 @@ TEST(FptSolverTest, getTour) {
   ASSERT_EQ(path[0].name, "node2");
   ASSERT_EQ(path[1].name, "node3");
   ASSERT_EQ(path[2].name, "node4");
- }
+}
