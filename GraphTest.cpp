@@ -8,7 +8,7 @@
 // _____________________________________________________________________________
 TEST(GraphTest, buildFromFile) {
   Graph g;
-  g.buildFromFile("test_data/example_graph2.graph");
+  g.buildFromFile("test_data/example_graph2.graph", false);
   // testing names of nodes.
   ASSERT_EQ(g._numNodes, 3);
   ASSERT_EQ(g._nodeNames.size(), 3);

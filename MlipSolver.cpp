@@ -9,12 +9,14 @@
 #include "MlipSolver.h"
 
 // _____________________________________________________________________________
-tuple<size_t, vector<Location>> MlipSolver::solve() {
+size_t MlipSolver::solve(double timeOut) {
+  _model.set(GRB_IntParam_LogToConsole, 0);
+  _model.set(GRB_IntParam_OutputFlag, 0);
+  _model.set(GRB_StringParam_LogFile, "gurobi.log");
   setupModel();
   _model.optimize();
   size_t optimum = static_cast<size_t>(_model.get(GRB_DoubleAttr_ObjVal));
-  vector<Location> path = getTour();
-  return std::make_tuple(optimum, path);
+  return optimum;
 }
 
 // ____________________________________________________________________________
@@ -33,6 +35,13 @@ void MlipSolver::setupModel() {
   vector<size_t> prizes = *(_graph.getPrizes());
   prizes.push_back(0);
   vector<vector<double>> distances = *(_graph.getDistances());
+
+  // Distance from startpoint to all locations set to zero.
+  // A tour can immediately start at any location.
+  for (size_t i = 0; i < totalNodes; i++) {
+    distances[0][i] = 0;
+  }
+  // Adding zero distances to virtual end location.
   for (size_t i = 0; i < totalNodes; i ++) {
     distances[i].push_back(0);
   }
@@ -182,9 +191,7 @@ vector<Location> MlipSolver::getTour() {
       }
     }
   }
-  Location startLoc = {0, 0, 0.0, 0.0, 0.0, 0.0, "start"};
   vector<Location> path;
-  path.push_back(startLoc);
   size_t nextLoc = std::get<1>(edgesTaken[0]);
   while (true) {
     if (nextLoc == maxNodes) {

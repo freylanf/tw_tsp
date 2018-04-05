@@ -1,0 +1,890 @@
+Optimal Tours for FPT solved instances of size: 20
+
+Path for instance 0
+ LocId | Prize |  Arrival  |   Leave   |     Location
+  10   |   1   |   570     |   585     |     51 Kriewaldt Circuit, Higgins
+  14   |   1   |588.54     |603.54     |     33a Mcmaster Street, Scullin
+  11   |   1   |607.73     |622.73     |     5 Beaurepaire Crescent, Holt
+   1   |   1   |626.03     |641.03     |     20 Solomon Crescent, Latham
+   3   |   1   |642.56     |657.56     |     6/1 Wanliss Street, Latham
+   6   |   1   |   660     |   675     |     16 Real Place, Latham
+  20   |   1   | 678.2     | 693.2     |     10/9 Keith Street, Scullin
+  18   |   1   |696.28     |711.28     |     132 Pennefather Street, Higgins
+   9   |   1   |716.44     |731.44     |     3 Want Place, Latham
+  15   |   1   |737.86     |752.86     |     7 Eaves Street, Holt
+   2   |   1   |757.22     |772.22     |     4/15 Wanliss Street, Latham
+   5   |   1   |   810     |   825     |     17 Paterick Place, Holt
+  17   |   1   |   855     |   870     |     15 Laycock Place, Holt
+
+Path for instance 1
+ LocId | Prize |  Arrival  |   Leave   |     Location
+   7   |   1   |   540     |   555     |     15 Rowe Place, Phillip
+  20   |   1   |   570     |   585     |     36/179 Melrose Drive, Lyons
+   5   |   1   |   600     |   615     |     31/28 Ringrose Crescent, Isaacs - Yamba View
+   3   |   1   |   630     |   645     |     63 Ainsworth Street, Mawson
+  16   |   1   |647.66     |662.66     |     56/12 Albermarle Place, Phillip, ACT
+  11   |   1   |666.68     |681.68     |     38/4 Wilkins Street, Mawson
+  18   |   1   |685.73     |700.73     |     56a Longerenong Street, Farrer
+  15   |   1   |   720     |   735     |     49a/12 Albermarle Place, Phillip
+  19   |   1   |740.71     |755.71     |     54 Longerenong Street, Farrer
+   2   |   1   |   765     |   780     |     30 Pindari Crescent, O'Malley
+   1   |   1   |781.28     |796.28     |     32/10 Taronga Place, O'Malley
+   8   |   1   |   810     |   825     |     19/21 Alsop Close, Phillip
+  10   |   1   |829.62     |844.62     |     49 Akame Circuit, O'Malley
+  17   |   1   |   870     |   885     |     70 Hurley Street, Mawson
+  13   |   1   |   900     |   915     |     44/6 Wilkins Street, Mawson
+  14   |   1   |920.49     |935.49     |     4/15 Dalman Crescent, O'Malley
+
+Path for instance 2
+ LocId | Prize |  Arrival  |   Leave   |     Location
+   7   |   1   |   540     |   555     |     15 Rowe Place, Phillip
+   8   |   1   |   570     |   585     |     36/179 Melrose Drive, Lyons
+  15   |   1   |   600     |   615     |     66a Collings Street, Pearce
+  16   |   1   |618.92     |633.92     |     1 Surprize Place, Phillip, ACT
+  10   |   1   | 637.9     | 652.9     |     63 Ainsworth Street, Mawson
+   3   |   1   |655.56     |670.56     |     56/12 Albermarle Place, Phillip, ACT
+  12   |   1   |673.72     |688.72     |     129/116 Easty Street, Phillip
+  19   |   1   |692.39     |707.39     |     51/17 Medley Street, Chifley
+  20   |   1   | 710.6     | 725.6     |     127 Theodore Street, Curtin
+   5   |   1   |   730     |   745     |     10/60 Callam Street, Phillip
+   9   |   1   | 746.6     | 761.6     |     58/179 Melrose Drive, Lyons
+   4   |   1   |   810     |   825     |     19/21 Alsop Close, Phillip
+  18   |   1   |828.14     |843.14     |     38/5 Burnie Street, Lyons
+  13   |   1   |   870     |   885     |     13 Hodgson Crescent, Pearce
+  14   |   1   |890.27     |905.27     |     44/1 Eldridge Crescent, Garran
+   6   |   1   |   910     |   925     |     119/98 Corinna Street, Phillip
+  11   |   1   |926.35     |941.35     |     119/116 Easty Street, Phillip
+
+Path for instance 3
+ LocId | Prize |  Arrival  |   Leave   |     Location
+  11   |   1   |   570     |   585     |     40 Mort Street, Braddon
+  15   |   1   |   600     |   615     |     215/24 Lonsdale Street, Braddon
+   4   |   1   |   630     |   645     |     51-53 Mort Street, Braddon - IQ Smart Apartments
+   9   |   1   |646.61     |661.61     |     521/74 Northbourne Avenue, Braddon
+   8   |   1   |661.61     |676.61     |     403/74 Northbourne Avenue, Braddon
+  17   |   1   |678.36     |693.36     |     2/6 Macleay Street, Turner
+  20   |   1   |696.26     |711.26     |     11/11/72-74 Macleay Street, Turner
+  14   |   1   |   720     |   735     |     10 Macleay Street, Turner
+  13   |   1   |   740     |   755     |     45/77 Northbourne Avenue, Turner
+   1   |   1   |   780     |   795     |     20/10 Ipma Street, Braddon
+   5   |   1   | 796.4     | 811.4     |     605/51 Mort Street, Braddon
+  12   |   1   |   840     |   855     |     145/77 Northbourne Avenue, Turner - The Avenue
+  10   |   1   |   885     |   900     |     705/74 Northbourne Avenue, Braddon
+   6   |   1   |   990     |  1005     |     5/17 Macleay Street, Turner, ACT
+
+Path for instance 4
+ LocId | Prize |  Arrival  |   Leave   |     Location
+   3   |   1   |   555     |   570     |     79 Theodore Street, Curtin
+  13   |   1   |572.62     |587.62     |     36/179 Melrose Drive, Lyons
+  16   |   1   |   600     |   615     |     40/3 Waddell Place, Curtin
+   1   |   1   |617.27     |632.27     |     54 James Street, Curtin
+  11   |   1   |634.13     |649.13     |     7 Irving Street, Phillip
+   4   |   1   |   660     |   675     |     23/6 Marrawah Street, Lyons
+   6   |   1   |677.06     |692.06     |     11 Argyle Place, Curtin
+   5   |   1   |693.78     |708.78     |     35 James Place, Curtin
+   2   |   1   | 709.9     | 724.9     |     127 Theodore Street, Curtin
+  15   |   1   |727.44     |742.44     |     30/1 Mcculloch Street, Curtin
+  17   |   1   |   750     |   765     |     28b Gillies Street, Curtin
+  12   |   1   |   780     |   795     |     130 Carruthers Street, Curtin
+  19   |   1   |   825     |   840     |     38/5 Burnie Street, Lyons
+   7   |   1   | 843.4     | 858.4     |     2/83 Carruthers Street, Curtin
+  18   |   1   | 862.9     | 877.9     |     3a Olympus Way, Lyons
+   9   |   1   |881.82     |896.82     |     23 Mccormack Street, Curtin
+   8   |   1   |   915     |   930     |     36 Macalister Crescent, Curtin
+
+Path for instance 5
+ LocId | Prize |  Arrival  |   Leave   |     Location
+  19   |   1   |   600     |   615     |     39 Jerrabomberra Avenue, Narrabundah
+  18   |   1   |   615     |   630     |     39 Jerrabomberra Avenue, Narrabundah
+   1   |   1   |633.13     |648.13     |     18 Austin Street, Griffith
+   2   |   1   |649.46     |664.46     |     7 Bannister Gardens, Griffith
+   5   |   1   |665.97     |680.97     |     6/55 Stuart Street, Griffith - The Asprey
+  13   |   1   | 682.6     | 697.6     |     6 Lockyer Street, Griffith
+   3   |   1   |   725     |   740     |     32 Barrallier Street, Griffith
+   9   |   1   |742.46     |757.46     |     42a Bougainville Street, Forrest
+  10   |   1   |   765     |   780     |     22/8 Giles Street, Griffith
+  11   |   1   |   780     |   795     |     26/8 Giles Street, Griffith
+   8   |   1   |   810     |   825     |     15/5 Empire Circuit, Forrest
+  14   |   1   |   870     |   885     |     98 Walker Crescent, Narrabundah
+   6   |   1   |   930     |   945     |     66 Franklin Street, Forrest
+
+Path for instance 6
+ LocId | Prize |  Arrival  |   Leave   |     Location
+  15   |   1   |   540     |   555     |     2 Littler Place, Banks
+  13   |   1   |   585     |   600     |     40 Forsythe Street, Banks
+  11   |   1   |602.27     |617.27     |     13 Wilson Crescent, Banks
+   8   |   1   |622.15     |637.15     |     84 Lewis Luxton Avenue, Gordon
+  10   |   1   |638.65     |653.65     |     13 Fingleton Crescent, Gordon
+  14   |   1   |657.77     |672.77     |     12 Curlew Place, Conder
+  20   |   1   | 676.2     | 691.2     |     9 Abercrombie Circuit, Banks
+  19   |   1   |692.23     |707.23     |     7 Tregellas Crescent, Banks
+   4   |   1   |   780     |   795     |     2/9 Ferry Place, Gordon
+  17   |   1   |   825     |   840     |     39 Mentone View, Conder
+  12   |   1   |841.36     |856.36     |     36 Loureiro Street, Conder
+  16   |   1   |   870     |   885     |     10 Beaufort Retreat, Gordon
+   9   |   1   |891.86     |906.86     |     4 Betty Maloney Crescent, Banks
+   7   |   1   |911.54     |926.54     |     1/22 Sid Barnes Crescent, Gordon
+   5   |   1   |931.83     |946.83     |     16 Mcvilly Close, Gordon
+
+Path for instance 7
+ LocId | Prize |  Arrival  |   Leave   |     Location
+   5   |   1   |   540     |   555     |     22a Hawdon Street, Ainslie
+  20   |   1   |   570     |   585     |     6/156 Knox Street, Watson
+  18   |   1   |   615     |   630     |     80 Ebden Street, Ainslie
+   1   |   1   |632.59     |647.59     |     146 Majura Avenue, Ainslie
+  19   |   1   |650.32     |665.32     |     21a Cowper Street, Ainslie
+   7   |   1   |667.31     |682.31     |     10/15-17 Majura Avenue, Dickson
+  12   |   1   |685.55     |700.55     |     26 Hoddle Gardens, Ainslie
+  15   |   1   |703.11     |718.11     |     242 Duffy Street, Ainslie
+  11   |   1   |722.67     |737.67     |     45 Stockdale Street, Dickson
+   4   |   1   |740.68     |755.68     |     54 Hannan Crescent, Ainslie
+  13   |   1   |   810     |   825     |     46a Stockdale Street, Dickson
+  10   |   1   |   840     |   855     |     12/32 Stockdale Street, Dickson
+  14   |   1   |   870     |   885     |     2 Hope Street, Dickson
+   8   |   1   |888.15     |903.15     |     4a Rutherford Crescent, Ainslie
+   6   |   1   |905.36     |920.36     |     16 Sherbrooke Street, Ainslie
+
+Path for instance 8
+ LocId | Prize |  Arrival  |   Leave   |     Location
+   1   |   1   |   540     |   555     |     22a Hawdon Street, Ainslie
+  20   |   1   |   570     |   585     |     11/271 Antill Street, Watson
+   7   |   1   |   615     |   630     |     80 Ebden Street, Ainslie
+   5   |   1   |632.59     |647.59     |     146 Majura Avenue, Ainslie
+  19   |   1   |650.32     |665.32     |     21a Cowper Street, Ainslie
+  12   |   1   |667.31     |682.31     |     10/15-17 Majura Avenue, Dickson
+   3   |   1   |685.55     |700.55     |     26 Hoddle Gardens, Ainslie
+  10   |   1   |703.11     |718.11     |     242 Duffy Street, Ainslie
+  15   |   1   |722.67     |737.67     |     45 Stockdale Street, Dickson
+   8   |   1   |740.68     |755.68     |     54 Hannan Crescent, Ainslie
+  16   |   1   |   810     |   825     |     46a Stockdale Street, Dickson
+  14   |   1   |   840     |   855     |     12/32 Stockdale Street, Dickson
+  17   |   1   |   870     |   885     |     2 Hope Street, Dickson
+  11   |   1   |886.46     |901.46     |     16 Sherbrooke Street, Ainslie
+   2   |   1   |904.73     |919.73     |     103 Duffy Street, Ainslie
+
+Path for instance 9
+ LocId | Prize |  Arrival  |   Leave   |     Location
+  17   |   1   |   510     |   525     |     34 Kurrama Close, Ngunnawal
+   4   |   1   |   540     |   555     |     1/217 Kosciuszko Avenue, Palmerston
+  18   |   1   |557.85     |572.85     |     78 Amagula Avenue, Ngunnawal
+  12   |   1   |578.51     |593.51     |     43 Keewong Street, Crace
+  19   |   1   |599.11     |614.11     |     2/3 Bural Court, Ngunnawal
+  15   |   1   |   630     |   645     |     3 Taggerty Street, Ngunnawal
+  14   |   1   |   675     |   690     |     110/100 Gungahlin Place, Gungahlin
+  20   |   1   |691.15     |706.15     |     67/10 Hinder Street, Gungahlin
+  11   |   1   |710.07     |725.07     |     2 Noble Close, Ngunnawal
+  16   |   1   |728.56     |743.56     |     14 Kangaroo Close, Nicholls
+  13   |   1   |   750     |   765     |     69 Oodgeroo Avenue, Franklin
+   8   |   1   |772.17     |787.17     |     68 Langtree Crescent, Crace
+   7   |   1   |787.55     |802.55     |     43 Langtree Crescent, Crace
+  10   |   1   |   840     |   855     |     23/80 Gozzard Street, Gungahlin
+   5   |   1   |   960     |   975     |     3 Painter Place, Palmerston
+
+Path for instance 10
+ LocId | Prize |  Arrival  |   Leave   |     Location
+  11   |   1   |   540     |   555     |     4/4 Verdon Street, O'Connor
+  19   |   1   |   600     |   615     |     40/58 Wattle Street, Lyneham
+   7   |   1   |615.91     |630.91     |     2 Berrigan Crescent, O'Connor
+  12   |   1   |631.96     |646.96     |     4 Wedge Crescent, Turner, ACT
+   6   |   1   |   660     |   675     |     2/27 Berrigan Crescent, O'Connor
+   4   |   1   |675.51     |690.51     |     102/12 David Street, Turner
+  16   |   1   |693.58     |708.58     |     25 Quandong Street, O'Connor
+   9   |   1   | 708.8     | 723.8     |     17 Quandong Street, O'Connor
+  10   |   1   |727.02     |742.02     |     7/27 Berrigan Crescent, O'Connor
+   3   |   1   |   780     |   795     |     35 Coolibah Crescent, O'Connor
+  15   |   1   |   810     |   825     |     5/15 Berrigan Crescent, O'Connor
+   2   |   1   |827.37     |842.37     |     14 Burt Street, O'Connor
+   5   |   1   |   870     |   885     |     407/241 Northbourne Avenue, Lyneham
+  14   |   1   |   920     |   935     |     10/15 Berrigan Crescent, O'Connor
+
+Path for instance 11
+ LocId | Prize |  Arrival  |   Leave   |     Location
+  18   |   1   |   580     |   595     |     85 Mary Gillespie Avenue, Gungahlin
+  10   |   1   | 595.9     | 610.9     |     303 Anthony Rolfe Avenue, Gungahlin
+  12   |   1   |613.83     |628.83     |     3/17 Tea Gardens, Gungahlin
+  11   |   1   |630.99     |645.99     |     77 Gozzard Street, Gungahlin - Mezzo
+   1   |   1   |647.52     |662.52     |     33/6 Gungahlin Place, Gungahlin
+   4   |   1   |663.48     |678.48     |     77 Gozzard Street, Gungahlin
+   7   |   1   |680.56     |695.56     |     110/100 Gungahlin Place, Gungahlin
+   3   |   1   |696.71     |711.71     |     67/10 Hinder Street, Gungahlin
+   9   |   1   |   720     |   735     |     301 Anthony Rolfe Avenue, Gungahlin
+  14   |   1   |738.76     |753.76     |     34 Winarlia Lane, Gungahlin
+   2   |   1   |   765     |   780     |     7 Braggett Street, Gungahlin
+  16   |   1   |   783     |   798     |     5 Mcclung Street, Gungahlin
+  17   |   1   |   840     |   855     |     23/80 Gozzard Street, Gungahlin
+   5   |   1   |   885     |   900     |     22 Helen Turner Street, Gungahlin
+  19   |   1   |  1020     |  1035     |     3/6 Kudyera Place, Ngunnawal
+
+Path for instance 12
+ LocId | Prize |  Arrival  |   Leave   |     Location
+   2   |   1   |   510     |   525     |     4/2 Mundawari Circuit, Ngunnawal
+   8   |   1   |   600     |   615     |     6 Tarling Street, Casey
+  13   |   1   |   630     |   645     |     1/2 Aroona Court, Ngunnawal
+  10   |   1   |646.54     |661.54     |     19 Giliruk Crescent, Ngunnawal
+   3   |   1   |664.71     |679.71     |     13 Bott Crescent, Casey
+  16   |   1   |680.55     |695.55     |     10 Gourgaud Street, Casey
+  11   |   1   |695.92     |710.92     |     15 Mcgovern Street, Casey
+  12   |   1   |   712     |   727     |     17 Kowalski Street, Casey
+  18   |   1   |730.15     |745.15     |     44/16 David Miller Crescent, Casey
+   1   |   1   |747.18     |762.18     |     14/11 Tarra Place, Ngunnawal
+  19   |   1   |764.41     |779.41     |     166 Plimsoll Drive, Casey
+   4   |   1   |   795     |   810     |     58 Bargang Crescent, Ngunnawal
+  15   |   1   |812.18     |827.18     |     41/16 David Miller Crescent, Casey
+  14   |   1   |829.72     |844.72     |     3 Ronald Walker Street, Casey
+   5   |   1   |846.17     |861.17     |     14 Rattigan Street, Casey
+  17   |   1   |863.86     |878.86     |     36 Critchley Street, Casey
+
+Path for instance 13
+ LocId | Prize |  Arrival  |   Leave   |     Location
+  12   |   1   |   510     |   525     |     79 Ballarat Street, Fisher
+  17   |   1   |   540     |   555     |     12 Rossarden Street, Fisher
+   6   |   1   |   570     |   585     |     53 Salsola Street, Rivett
+   9   |   1   |   600     |   615     |     1 Bangalay Crescent, Rivett
+   5   |   1   |   630     |   645     |     170 Streeton Drive, Chapman
+   2   |   1   |647.02     |662.02     |     9 Gavin Place, Chapman
+   1   |   1   | 663.4     | 678.4     |     108 Perry Drive, Chapman
+   8   |   1   |681.38     |696.38     |     3 Hamersley Place, Fisher
+  16   |   1   | 698.1     | 713.1     |     18/177 Badimara Street, Fisher
+  11   |   1   |   720     |   735     |     89 Fremantle Drive, Stirling
+   7   |   1   |   750     |   765     |     4 Bangalay Crescent, Rivett
+  13   |   1   |765.55     |780.55     |     10 Epacris Place, Rivett
+  15   |   1   |786.43     |801.43     |     2/12 Araluen Street, Fisher
+  14   |   1   |   810     |   825     |     2 Jemalong Street, Duffy
+   4   |   1   |830.22     |845.22     |     20 Perry Drive, Chapman
+  19   |   1   | 848.2     | 863.2     |     11/16 Damala Street, Waramanga
+
+Path for instance 14
+ LocId | Prize |  Arrival  |   Leave   |     Location
+  12   |   1   |   540     |   555     |     2 Littler Place, Banks
+  11   |   1   |   585     |   600     |     40 Forsythe Street, Banks
+   9   |   1   |602.27     |617.27     |     13 Wilson Crescent, Banks
+  10   |   1   |622.15     |637.15     |     84 Lewis Luxton Avenue, Gordon
+  17   |   1   |638.65     |653.65     |     13 Fingleton Crescent, Gordon
+  14   |   1   |657.77     |672.77     |     12 Curlew Place, Conder
+  16   |   1   | 676.2     | 691.2     |     9 Abercrombie Circuit, Banks
+  19   |   1   |696.47     |711.47     |     13 Noel Ryan Gardens, Gordon
+   4   |   1   |   780     |   795     |     2/9 Ferry Place, Gordon
+  18   |   1   |   825     |   840     |     39 Mentone View, Conder
+  13   |   1   |841.36     |856.36     |     36 Loureiro Street, Conder
+  20   |   1   |   870     |   885     |     10 Beaufort Retreat, Gordon
+   7   |   1   |891.86     |906.86     |     4 Betty Maloney Crescent, Banks
+   8   |   1   |911.54     |926.54     |     1/22 Sid Barnes Crescent, Gordon
+   5   |   1   |931.83     |946.83     |     16 Mcvilly Close, Gordon
+
+Path for instance 15
+ LocId | Prize |  Arrival  |   Leave   |     Location
+  17   |   1   |   570     |   585     |     119b Gouger Street, Torrens
+  12   |   1   |   600     |   615     |     26 Steinwedel Street, Farrer
+  11   |   1   | 617.6     | 632.6     |     4 Crane Place, Farrer
+   8   |   1   |   645     |   660     |     38/4 Wilkins Street, Mawson
+   2   |   1   |662.73     |677.73     |     30 Pridham Street, Farrer
+   7   |   1   | 680.5     | 695.5     |     56a Longerenong Street, Farrer
+  13   |   1   |697.32     |712.32     |     13 Wenholz Street, Farrer
+   1   |   1   |716.64     |731.64     |     54 Pridham Street, Farrer
+   6   |   1   |   735     |   750     |     54 Longerenong Street, Farrer
+   9   |   1   |754.18     |769.18     |     30 Parsons Street, Torrens
+   4   |   1   |771.15     |786.15     |     1 Stevenson Street, Torrens
+  16   |   1   |   810     |   825     |     5 Pyke Place, Wanniassa
+   3   |   1   |828.98     |843.98     |     64a Lambrigg Street, Farrer
+  15   |   1   |   870     |   885     |     13 Hodgson Crescent, Pearce
+   5   |   1   |   900     |   915     |     44/6 Wilkins Street, Mawson
+
+Path for instance 16
+ LocId | Prize |  Arrival  |   Leave   |     Location
+   9   |   1   |   570     |   585     |     14 Timboram Street, Amaroo
+   5   |   1   |585.99     |600.99     |     74 Shoalhaven Avenue, Amaroo
+  10   |   1   |602.19     |617.19     |     11 Cooloola Street, Amaroo
+  19   |   1   |618.71     |633.71     |     24 Mission Street, Amaroo
+  18   |   1   |637.34     |652.34     |     33/6 Gungahlin Place, Gungahlin
+  13   |   1   | 653.3     | 668.3     |     77 Gozzard Street, Gungahlin
+   4   |   1   |   671     |   686     |     90/36 Paul Coe Crescent, Ngunnawal
+   1   |   1   |687.75     |702.75     |     2 Lockhart Place, Amaroo
+   2   |   1   |704.21     |719.21     |     12 Annan Close, Amaroo
+  15   |   1   |723.45     |738.45     |     3 Miago Court, Ngunnawal
+  16   |   1   |   765     |   780     |     7 Braggett Street, Gungahlin
+   6   |   1   |783.31     |798.31     |     24/46 Paul Coe Crescent, Ngunnawal - Whitehaven
+   8   |   1   |   825     |   840     |     90 Burdekin Avenue, Amaroo
+  20   |   1   |844.84     |859.84     |     27/80 Gozzard Street, Gungahlin
+  11   |   1   |863.55     |878.55     |     69/42 Paul Coe Crescent, Ngunnawal
+   3   |   1   |  1020     |  1035     |     3/6 Kudyera Place, Ngunnawal
+
+Path for instance 17
+ LocId | Prize |  Arrival  |   Leave   |     Location
+  10   |   1   |   570     |   585     |     37/329 Flemington Road, Franklin
+  15   |   1   |586.88     |601.88     |     85 Mary Gillespie Avenue, Gungahlin
+  12   |   1   |602.78     |617.78     |     303 Anthony Rolfe Avenue, Gungahlin
+  18   |   1   |618.86     |633.86     |     8 Cosy Crescent, Harrison
+   8   |   1   |637.26     |652.26     |     18 Hesba Brinsmead Street, Franklin
+   3   |   1   |   690     |   705     |     18 Cudgewa Lane, Harrison
+   1   |   1   |706.58     |721.58     |     89/11 Wimmera Street, Harrison
+  11   |   1   |724.58     |739.58     |     301 Anthony Rolfe Avenue, Gungahlin
+   6   |   1   |741.74     |756.74     |     31/82 Henry Kendall Street, Franklin
+   2   |   1   |   760     |   775     |     85/148 Flemington Road, Harrison
+  17   |   1   |778.02     |793.02     |     5 Fairydale Street, Harrison
+   9   |   1   |   810     |   825     |     47 Tanami Street, Harrison
+   4   |   1   |   840     |   855     |     7/42 Adder Street, Harrison
+
+Path for instance 18
+ LocId | Prize |  Arrival  |   Leave   |     Location
+  20   |   1   |   570     |   585     |     15 Boniwell Street, Higgins
+   5   |   1   |587.51     |602.51     |     51 Kriewaldt Circuit, Higgins
+  11   |   1   |604.53     |619.53     |     5 Beaurepaire Crescent, Holt
+  10   |   1   |622.83     |637.83     |     20 Solomon Crescent, Latham
+   4   |   1   |639.36     |654.36     |     6/1 Wanliss Street, Latham
+   1   |   1   |   660     |   675     |     16 Real Place, Latham
+  13   |   1   | 678.2     | 693.2     |     10/9 Keith Street, Scullin
+  16   |   1   |695.35     |710.35     |     4 Long Place, Scullin
+   9   |   1   |714.11     |729.11     |     132 Pennefather Street, Higgins
+  12   |   1   |732.19     |747.19     |     8/2 Adair Street, Scullin , ACT
+  19   |   1   |752.53     |767.53     |     7 Eaves Street, Holt
+   8   |   1   |771.89     |786.89     |     4/15 Wanliss Street, Latham
+   2   |   1   |   810     |   825     |     17 Paterick Place, Holt
+  15   |   1   |   880     |   895     |     8/9 Lidgett Place, Florey
+
+Path for instance 19
+ LocId | Prize |  Arrival  |   Leave   |     Location
+  12   |   1   |   600     |   615     |     29 Cowdery Place, Monash
+   8   |   1   |   660     |   675     |     21 Chauncy Crescent, Richardson
+   5   |   1   |678.22     |693.22     |     22 Kiddle Crescent, Richardson
+   3   |   1   |696.25     |711.25     |     26 Collyburl Crescent, Isabella Plains
+  16   |   1   |715.81     |730.81     |     29 Swanton Street, Chisholm
+  10   |   1   |736.81     |751.81     |     6 Eggers Place, Bonython
+  14   |   1   |752.42     |767.42     |     11/70 Hurtle Avenue, Bonython
+  13   |   1   |772.96     |787.96     |     34 Vidal Street, Richardson
+  20   |   1   |792.13     |807.13     |     11 Girdlestone Circuit, Calwell
+  19   |   1   |   810     |   825     |     44 Fink Crescent, Calwell
+   6   |   1   |   855     |   870     |     23 Casey Crescent, Calwell
+  11   |   1   |  1060     |  1075     |     126 Sturdee Crescent, Monash
+
+Path for instance 20
+ LocId | Prize |  Arrival  |   Leave   |     Location
+  20   |   1   |   510     |   525     |     24 Edkins Street, Downer
+  14   |   1   |   540     |   555     |     22a Hawdon Street, Ainslie
+   5   |   1   |   570     |   585     |     6/156 Knox Street, Watson
+  10   |   1   |   630     |   645     |     22 Selwyn Street, Hackett
+  12   |   1   |   660     |   675     |     4/65 Melba Street, Downer
+  16   |   1   |677.27     |692.27     |     10/15-17 Majura Avenue, Dickson
+  11   |   1   |696.31     |711.31     |     242 Duffy Street, Ainslie
+  18   |   1   |   735     |   750     |     412 Antill Street, Watson
+  13   |   1   |   780     |   795     |     17 Gardiner Street, Downer
+  19   |   1   |800.52     |815.52     |     438 Antill Street, Watson
+   4   |   1   |   840     |   855     |     196 Majura Avenue, Ainslie
+  17   |   1   |   885     |   900     |     4a Rutherford Crescent, Ainslie
+  15   |   1   |902.21     |917.21     |     16 Sherbrooke Street, Ainslie
+
+Path for instance 21
+ LocId | Prize |  Arrival  |   Leave   |     Location
+  16   |   1   |   540     |   555     |     20 Spofforth Street, Holt
+  17   |   1   |   570     |   585     |     63 Osburn Drive, Macgregor
+  10   |   1   |590.98     |605.98     |     51 Kriewaldt Circuit, Higgins
+   2   |   1   |   608     |   623     |     5 Beaurepaire Crescent, Holt
+   3   |   1   | 625.4     | 640.4     |     218 Osburn Drive, Macgregor
+   6   |   1   |643.54     |658.54     |     3 Kieran Place, Holt
+  19   |   1   |663.25     |678.25     |     17 Heighway Street, Macgregor
+  15   |   1   |   690     |   705     |     56 Macfarlane Burnet Avenue, Macgregor
+  20   |   1   |711.85     |726.85     |     132 Pennefather Street, Higgins
+   5   |   1   |730.62     |745.62     |     7 Eaves Street, Holt
+  11   |   1   |   750     |   765     |     4/15 Wanliss Street, Latham
+  12   |   1   |   810     |   825     |     17 Paterick Place, Holt
+   7   |   1   |   855     |   870     |     15 Laycock Place, Holt
+
+Path for instance 22
+ LocId | Prize |  Arrival  |   Leave   |     Location
+  13   |   1   |   540     |   555     |     7/51 Hampton Circuit, Yarralumla
+  15   |   1   |555.72     |570.72     |     9 Irwin Street, Yarralumla
+  19   |   1   |572.82     |587.82     |     4 Hamilton Row, Yarralumla
+   1   |   1   |   630     |   645     |     22/6 Grose Street, Deakin
+   4   |   1   |646.49     |661.49     |     24 Gawler Crescent, Deakin
+  12   |   1   |662.57     |677.57     |     22 Bedford Street, Deakin
+   8   |   1   |678.91     |693.91     |     7/47 Hampton Circuit, Yarralumla
+  10   |   1   |694.01     |709.01     |     16/41 Hampton Circuit, Yarralumla
+  11   |   1   |709.01     |724.01     |     17/41 Hampton Circuit, Yarralumla
+   2   |   1   |   735     |   750     |     221/2 Grose Street, Deakin - The Ambassador
+  18   |   1   |752.61     |767.61     |     25 Barron Street, Deakin
+  17   |   1   |   780     |   795     |     89 Schlich Street, Yarralumla
+  14   |   1   |797.67     |812.67     |     80 Jervois Street, Deakin
+   9   |   1   |   840     |   855     |     6/43 Hampton Circuit, Yarralumla
+  20   |   1   |856.87     |871.87     |     115 Schlich Street, Yarralumla
+
+Path for instance 23
+ LocId | Prize |  Arrival  |   Leave   |     Location
+  20   |   1   |   570     |   585     |     53/3 London Circuit, Canberra, ACT
+   5   |   1   |587.02     |602.02     |     40 Mort Street, Braddon
+  16   |   1   |603.14     |618.14     |     38/30 Lonsdale Street, Braddon
+  12   |   1   |   630     |   645     |     51-53 Mort Street, Braddon - IQ Smart Apartments
+   7   |   1   |646.61     |661.61     |     521/74 Northbourne Avenue, Braddon
+   6   |   1   |661.61     |676.61     |     403/74 Northbourne Avenue, Braddon
+   9   |   1   |678.36     |693.36     |     2/6 Macleay Street, Turner
+  19   |   1   |695.81     |710.81     |     51/45 West Row,Canberra, ACT
+  11   |   1   |   720     |   735     |     10 Macleay Street, Turner
+   2   |   1   |   740     |   755     |     45/77 Northbourne Avenue, Turner
+  15   |   1   |   780     |   795     |     20/10 Ipma Street, Braddon
+  10   |   1   | 796.4     | 811.4     |     605/51 Mort Street, Braddon
+   1   |   1   |   840     |   855     |     145/77 Northbourne Avenue, Turner - The Avenue
+   8   |   1   |   885     |   900     |     705/74 Northbourne Avenue, Braddon
+  14   |   1   |   990     |  1005     |     5/17 Macleay Street, Turner, ACT
+
+Path for instance 24
+ LocId | Prize |  Arrival  |   Leave   |     Location
+  11   |   1   |   570     |   585     |     37/329 Flemington Road, Franklin
+  16   |   1   |586.88     |601.88     |     85 Mary Gillespie Avenue, Gungahlin
+  15   |   1   |602.78     |617.78     |     303 Anthony Rolfe Avenue, Gungahlin
+  17   |   1   |618.86     |633.86     |     8 Cosy Crescent, Harrison
+  10   |   1   |637.26     |652.26     |     18 Hesba Brinsmead Street, Franklin
+   2   |   1   |   690     |   705     |     18 Cudgewa Lane, Harrison
+   4   |   1   |706.58     |721.58     |     89/11 Wimmera Street, Harrison
+  14   |   1   |724.58     |739.58     |     301 Anthony Rolfe Avenue, Gungahlin
+   7   |   1   |741.74     |756.74     |     31/82 Henry Kendall Street, Franklin
+   5   |   1   |   760     |   775     |     85/148 Flemington Road, Harrison
+  18   |   1   |779.48     |794.48     |     5 Mcclung Street, Gungahlin
+   3   |   1   |   810     |   825     |     47 Tanami Street, Harrison
+   1   |   1   |   840     |   855     |     7/42 Adder Street, Harrison
+
+Path for instance 25
+ LocId | Prize |  Arrival  |   Leave   |     Location
+  14   |   1   |   600     |   615     |     20/114 Athllon Drive, Greenway
+  12   |   1   |617.89     |632.89     |     Limburg Way, Greenway
+   7   |   1   |634.14     |649.14     |     Oakden Street, Greenway, ACT
+   6   |   1   |649.38     |664.38     |     Cynthea Teague Crescent, Greenway
+   3   |   1   |665.64     |680.64     |     14/10 Helpmann Street, Bonython
+  13   |   1   |683.74     |698.74     |     20 Dashwood Retreat, Bonython
+  20   |   1   |   703     |   718     |     26 Collyburl Crescent, Isabella Plains
+  10   |   1   |722.39     |737.39     |     Anketell Street, Greenway
+   9   |   1   |740.18     |755.18     |     6 Eggers Place, Bonython
+   8   |   1   |755.79     |770.79     |     11/70 Hurtle Avenue, Bonython
+   4   |   1   |   780     |   795     |     9/15 Tenison Woods Circuit, Bonython
+  19   |   1   |799.21     |814.21     |     16 Catani Place, Monash
+   2   |   1   |   840     |   855     |     5 Puddy Street, Bonython
+   1   |   1   |   900     |   915     |     17 Burgoyne Street, Bonython
+  17   |   1   |918.98     |933.98     |     16/6 Dods Place, Greenway
+
+Path for instance 26
+ LocId | Prize |  Arrival  |   Leave   |     Location
+  15   |   1   |   510     |   525     |     79 Ballarat Street, Fisher
+  20   |   1   |   600     |   615     |     50 Maxworthy Street, Kambah
+  11   |   1   |617.62     |632.62     |     9 Illingworth Street, Wanniassa
+   1   |   1   |637.84     |652.84     |     50 Harrington Circuit, Kambah
+   3   |   1   |   660     |   675     |     41 Sinclair Street, Kambah
+  12   |   1   |680.79     |695.79     |     3 Hamersley Place, Fisher
+   7   |   1   |702.02     |717.02     |     5/87 Morrison Street, Kambah
+   4   |   1   |   720     |   735     |     186 Boddington Crescent, Kambah
+   9   |   1   |736.85     |751.85     |     4 Vansittart Crescent, Kambah
+   6   |   1   |752.72     |767.72     |     64 O'Halloran Circuit, Kambah
+   8   |   1   |   770     |   785     |     101 O'Halloran Circuit, Kambah
+   5   |   1   |   820     |   835     |     1 Hepburn Place, Kambah
+   2   |   1   |   840     |   855     |     35 Barritt Street, Kambah
+  16   |   1   |   870     |   885     |     13/17 Pinkerton Circuit, Kambah
+  18   |   1   |   915     |   930     |     43/25 Pinkerton Circuit, Kambah
+  17   |   1   |  1350     |  1365     |     15 Rounsevell Street, Kambah
+
+Path for instance 27
+ LocId | Prize |  Arrival  |   Leave   |     Location
+   4   |   1   |   510     |   525     |     24 Edkins Street, Downer
+   9   |   1   |   570     |   585     |     11/271 Antill Street, Watson
+  17   |   1   |588.82     |603.82     |     25 Blacket Street, Downer
+  14   |   1   |605.28     |620.28     |     338/1 Mouat Street, Lyneham
+  13   |   1   |620.28     |635.28     |     330/1 Mouat Street, Lyneham
+   1   |   1   |639.72     |654.72     |     39 Mccawley Street, Watson
+  16   |   1   |658.44     |673.44     |     50/21 Aspinall Street, Watson
+  18   |   1   |   735     |   750     |     171 Majura Avenue, Dickson
+   5   |   1   | 754.2     | 769.2     |     11 Tardent Street, Downer
+  15   |   1   |   780     |   795     |     17 Gardiner Street, Downer
+   7   |   1   |798.35     |813.35     |     96 Melba Place, Downer
+  10   |   1   |   840     |   855     |     196 Majura Avenue, Ainslie
+   3   |   1   |   960     |   975     |     38 Banfield Street, Downer
+
+Path for instance 28
+ LocId | Prize |  Arrival  |   Leave   |     Location
+  12   |   1   |   570     |   585     |     37/329 Flemington Road, Franklin
+  16   |   1   |586.88     |601.88     |     85 Mary Gillespie Avenue, Gungahlin
+  15   |   1   |602.78     |617.78     |     303 Anthony Rolfe Avenue, Gungahlin
+  14   |   1   |618.86     |633.86     |     8 Cosy Crescent, Harrison
+  10   |   1   |637.26     |652.26     |     18 Hesba Brinsmead Street, Franklin
+   3   |   1   |   690     |   705     |     18 Cudgewa Lane, Harrison
+   5   |   1   |706.58     |721.58     |     89/11 Wimmera Street, Harrison
+  13   |   1   |724.58     |739.58     |     301 Anthony Rolfe Avenue, Gungahlin
+   8   |   1   |741.74     |756.74     |     31/82 Henry Kendall Street, Franklin
+   6   |   1   |   760     |   775     |     85/148 Flemington Road, Harrison
+  18   |   1   |778.45     |793.45     |     69 Oodgeroo Avenue, Franklin
+   1   |   1   |   810     |   825     |     47 Tanami Street, Harrison
+   4   |   1   |   840     |   855     |     7/42 Adder Street, Harrison
+
+Path for instance 29
+ LocId | Prize |  Arrival  |   Leave   |     Location
+  12   |   1   |   570     |   585     |     37/329 Flemington Road, Franklin
+  15   |   1   |586.88     |601.88     |     85 Mary Gillespie Avenue, Gungahlin
+  14   |   1   |602.78     |617.78     |     303 Anthony Rolfe Avenue, Gungahlin
+  18   |   1   |618.86     |633.86     |     8 Cosy Crescent, Harrison
+  10   |   1   |637.26     |652.26     |     18 Hesba Brinsmead Street, Franklin
+   1   |   1   |   690     |   705     |     18 Cudgewa Lane, Harrison
+   3   |   1   |706.58     |721.58     |     89/11 Wimmera Street, Harrison
+  13   |   1   |724.58     |739.58     |     301 Anthony Rolfe Avenue, Gungahlin
+   7   |   1   |741.74     |756.74     |     31/82 Henry Kendall Street, Franklin
+   6   |   1   |   760     |   775     |     85/148 Flemington Road, Harrison
+  17   |   1   |779.48     |794.48     |     5 Mcclung Street, Gungahlin
+   4   |   1   |   810     |   825     |     47 Tanami Street, Harrison
+   2   |   1   |   840     |   855     |     7/42 Adder Street, Harrison
+
+Path for instance 30
+ LocId | Prize |  Arrival  |   Leave   |     Location
+   9   |   1   |   600     |   615     |     29/50 Embling Street, Wanniassa
+   3   |   1   |616.75     |631.75     |     10/17 Ashley Drive, Wanniassa
+   6   |   1   |633.32     |648.32     |     14 Mcwhae Circuit, Wanniassa
+  10   |   1   |651.44     |666.44     |     378 Bugden Avenue, Fadden
+  12   |   1   |671.64     |686.64     |     22 Kiddle Crescent, Richardson
+   2   |   1   |690.62     |705.62     |     1/17 Ashley Drive, Wanniassa
+   7   |   1   | 707.2     | 722.2     |     49 Mcwhae Circuit, Wanniassa
+  19   |   1   |727.78     |742.78     |     Anketell Street, Greenway
+  16   |   1   |747.83     |762.83     |     22 Abercorn Crescent, Isabella Plains
+  17   |   1   |768.03     |783.03     |     13/171 Bugden Avenue, Gowrie
+  13   |   1   |787.99     |802.99     |     6 Wolfingham Place, Isabella Plains
+  14   |   1   |   810     |   825     |     5 Pyke Place, Wanniassa
+  18   |   1   |  1050     |  1065     |     31/174 Clive Steele Avenue, Monash
+   1   |   1   |1069.49     |1084.49     |     126 Sturdee Crescent, Monash
+
+Path for instance 31
+ LocId | Prize |  Arrival  |   Leave   |     Location
+  18   |   1   |   570     |   585     |     119b Gouger Street, Torrens
+   9   |   1   |   600     |   615     |     4 Mauldon Street, Chifley
+  19   |   1   |   630     |   645     |     63 Ainsworth Street, Mawson
+  11   |   1   |646.48     |661.48     |     38/4 Wilkins Street, Mawson
+   6   |   1   |665.36     |680.36     |     19/6 Kemsley Place, Pearce
+   7   |   1   |682.56     |697.56     |     60 Pethebridge Street, Pearce
+  15   |   1   |   730     |   745     |     10/60 Callam Street, Phillip
+  17   |   1   | 746.6     | 761.6     |     58/179 Melrose Drive, Lyons
+  12   |   1   |766.43     |781.43     |     1 Stevenson Street, Torrens
+   5   |   1   |   810     |   825     |     81 Parkhill Street, Pearce
+   3   |   1   |827.31     |842.31     |     82 Macfarland Crescent, Pearce
+   2   |   1   |843.36     |858.36     |     29 Mclaren Crescent, Pearce
+  14   |   1   |   870     |   885     |     70 Hurley Street, Mawson
+  13   |   1   |   900     |   915     |     44/6 Wilkins Street, Mawson
+   1   |   1   | 918.1     | 933.1     |     2/1 Mcgee Place, Pearce
+
+Path for instance 32
+ LocId | Prize |  Arrival  |   Leave   |     Location
+   9   |   1   |   540     |   555     |     7/51 Hampton Circuit, Yarralumla
+  11   |   1   |555.72     |570.72     |     9 Irwin Street, Yarralumla
+  15   |   1   |572.82     |587.82     |     4 Hamilton Row, Yarralumla
+  12   |   1   |   630     |   645     |     22/6 Grose Street, Deakin
+   1   |   1   |646.49     |661.49     |     24 Gawler Crescent, Deakin
+   8   |   1   |662.57     |677.57     |     22 Bedford Street, Deakin
+   4   |   1   |678.91     |693.91     |     7/47 Hampton Circuit, Yarralumla
+   6   |   1   |694.01     |709.01     |     16/41 Hampton Circuit, Yarralumla
+   7   |   1   |709.01     |724.01     |     17/41 Hampton Circuit, Yarralumla
+   2   |   1   |   735     |   750     |     221/2 Grose Street, Deakin - The Ambassador
+  19   |   1   |752.19     |767.19     |     50 Schlich Street, Yarralumla
+  13   |   1   |   780     |   795     |     89 Schlich Street, Yarralumla
+  10   |   1   |797.67     |812.67     |     80 Jervois Street, Deakin
+   5   |   1   |   840     |   855     |     6/43 Hampton Circuit, Yarralumla
+  16   |   1   |856.87     |871.87     |     115 Schlich Street, Yarralumla
+  18   |   1   |   900     |   915     |     5/51 Musgrave Street, Yarralumla
+
+Path for instance 33
+ LocId | Prize |  Arrival  |   Leave   |     Location
+   3   |   1   |   555     |   570     |     61 Darling Street, Barton , ACT
+   5   |   1   |571.01     |586.01     |     35/3 Burbury Close, Barton
+  13   |   1   |   600     |   615     |     9/14 New South Wales Crescent, Forrest
+   2   |   1   | 617.3     | 632.3     |     82/15 Darling Street, Barton
+  10   |   1   |633.67     |648.67     |     52/16 New South Wales Crescent, Forrest
+  20   |   1   |652.45     |667.45     |     Honeysett View, Kingston - Peninsula at the foreshore
+  18   |   1   |668.43     |683.43     |     8/8/71 Giles Street, Kingston
+   8   |   1   |686.54     |701.54     |     39/45 Blackall Street, Barton
+   7   |   1   |701.54     |716.54     |     21/45 Blackall Street, Barton
+   6   |   1   |718.16     |733.16     |     6/3 Burbury Close, Barton
+   4   |   1   |734.39     |749.39     |     5/21 Brisbane Avenue, Barton
+  14   |   1   |   765     |   780     |     162/67 Giles Street, Kingston
+  12   |   1   |   810     |   825     |     15/5 Empire Circuit, Forrest
+  17   |   1   |   840     |   855     |     30/43-51 Giles Street, Kingston - Wentworth Court
+  19   |   1   |   870     |   885     |     126/53 Eyre Street, Kingston
+   9   |   1   |   890     |   905     |     22/5 Sydney Avenue, Barton
+   1   |   1   |906.28     |921.28     |     92/23 Macquarie Street, Barton
+  15   |   1   |   930     |   945     |     66 Franklin Street, Forrest
+
+Path for instance 34
+ LocId | Prize |  Arrival  |   Leave   |     Location
+  16   |   1   |   570     |   585     |     53 Salsola Street, Rivett
+   4   |   1   |   600     |   615     |     1 Bangalay Crescent, Rivett
+  19   |   1   |620.25     |635.25     |     28 Peter Cullen Way, Wright
+   8   |   1   |640.55     |655.55     |     89 Fremantle Drive, Stirling
+  12   |   1   |658.33     |673.33     |     9 Gavin Place, Chapman
+  10   |   1   |674.71     |689.71     |     108 Perry Drive, Chapman
+  14   |   1   |694.92     |709.92     |     36/22 Namatjira Drive, Weston - Mountview Estate
+  17   |   1   |   720     |   735     |     66 Gruner Street, Weston , ACT
+   9   |   1   |738.15     |753.15     |     89 Fremantle Drive, Stirling
+   3   |   1   |755.21     |770.21     |     4 Bangalay Crescent, Rivett
+   5   |   1   |770.76     |785.76     |     10 Epacris Place, Rivett
+  15   |   1   |789.42     |804.42     |     5 Malara Street, Waramanga
+  11   |   1   |808.25     |823.25     |     44 Hilder Street, Weston
+  20   |   1   |823.65     |838.65     |     66 Hilder Street, Weston
+  18   |   1   |842.45     |857.45     |     11/16 Damala Street, Waramanga
+   7   |   1   |   885     |   900     |     29 Serpentine Street, Duffy
+
+Path for instance 35
+ LocId | Prize |  Arrival  |   Leave   |     Location
+  14   |   1   |   540     |   555     |     4/2 Playfair Place, Belconnen
+  17   |   1   |   600     |   615     |     13 Disney Court, Belconnen
+   1   |   1   |   630     |   645     |     148/41 Chandler Street, Belconnen - Altitude
+  11   |   1   |646.55     |661.55     |     120 Eastern Valley Way, Belconnen
+   3   |   1   |   720     |   735     |     214/41 Chandler Street, Belconnen Town Centre - Altitude
+   4   |   1   |735.62     |750.62     |     18/39 Benjamin Way, Belconnen
+   5   |   1   |750.62     |765.62     |     42/39 Benjamin Way, Belconnen - Sentinel
+  10   |   1   |767.73     |782.73     |     Belconnen - Wayfarer
+  13   |   1   |783.36     |798.36     |     99 Eastern Valley Way, Belconnen
+  18   |   1   |   810     |   825     |     28c/21 Beissel Street, Belconnen
+  19   |   1   |   855     |   870     |     51/20 Beissel Street, Belconnen
+   6   |   1   |871.84     |886.84     |     46/39 Benjamin Way, Belconnen - Sentinel
+   8   |   1   |   930     |   945     |     53b/9 Chandler Street, Belconnen
+   2   |   1   | 946.3     | 961.3     |     20/41 Chandler Street, Belconnen - ALTITUDE
+
+Path for instance 36
+ LocId | Prize |  Arrival  |   Leave   |     Location
+   1   |   1   |   540     |   555     |     4/4 Verdon Street, O'Connor
+  14   |   1   |   600     |   615     |     40/58 Wattle Street, Lyneham
+   6   |   1   |615.91     |630.91     |     2 Berrigan Crescent, O'Connor
+   3   |   1   |631.96     |646.96     |     4 Wedge Crescent, Turner, ACT
+  17   |   1   |648.76     |663.76     |     84/10 Ipima Street, Braddon
+   5   |   1   |666.58     |681.58     |     2/27 Berrigan Crescent, O'Connor
+   2   |   1   |682.09     |697.09     |     102/12 David Street, Turner
+  19   |   1   |698.87     |713.87     |     20/123 Lowanna Street, Braddon
+   8   |   1   |   720     |   735     |     7/27 Berrigan Crescent, O'Connor
+  16   |   1   |   780     |   795     |     20/10 Ipma Street, Braddon
+  12   |   1   |   810     |   825     |     5/15 Berrigan Crescent, O'Connor
+  20   |   1   |827.31     |842.31     |     8 Lilley Street, O'Connor
+  18   |   1   |   870     |   885     |     Murdoch Street, Lyneham
+  11   |   1   |   920     |   935     |     10/15 Berrigan Crescent, O'Connor
+
+Path for instance 37
+ LocId | Prize |  Arrival  |   Leave   |     Location
+  11   |   1   |   585     |   600     |     11 Bingham Circuit, Kaleen
+  15   |   1   |604.14     |619.14     |     37 Braybrooke Street, Bruce
+   7   |   1   |623.15     |638.15     |     51/88 Narrambla Terrace, Lawson
+  10   |   1   |641.44     |656.44     |     36 Diamantina Crescent, Kaleen
+   3   |   1   |658.71     |673.71     |     Stockman Avenue, Lawson, ACT
+   2   |   1   |674.42     |689.42     |     14 Rouseabout Street, Lawson
+  16   |   1   |693.21     |708.21     |     18 Tandy Close, Bruce
+   1   |   1   |   720     |   735     |     Rouseabout Street, Lawson, ACT
+   5   |   1   |735.62     |750.62     |     3 Jumbuck Crescent, Lawson, ACT
+   8   |   1   |751.88     |766.88     |     Wanderlight Avenue, Lawson
+  17   |   1   |   780     |   795     |     108/8 Baudinette Circuit, Bruce
+  13   |   1   |796.13     |811.13     |     12/1 Eardley Street, Bruce
+  12   |   1   |811.13     |826.13     |     10/1 Eardley Street, Bruce
+   9   |   1   |828.78     |843.78     |     1 Nevertire Street, Lawson, ACT
+   4   |   1   |845.08     |860.08     |     Stockman Avenue, , ACT
+   6   |   1   | 860.6     | 875.6     |     43/2 Pipeclay Street, Lawson, ACT
+
+Path for instance 38
+ LocId | Prize |  Arrival  |   Leave   |     Location
+   5   |   1   |   540     |   555     |     7/51 Hampton Circuit, Yarralumla
+  16   |   1   |555.72     |570.72     |     9 Irwin Street, Yarralumla
+  14   |   1   |573.32     |588.32     |     30 Mueller Street, Yarralumla
+  19   |   1   |   600     |   615     |     19 Newman Street, Yarralumla
+  20   |   1   |   630     |   645     |     22/6 Grose Street, Deakin
+  15   |   1   |646.49     |661.49     |     24 Gawler Crescent, Deakin
+  18   |   1   |662.57     |677.57     |     22 Bedford Street, Deakin
+   8   |   1   |678.91     |693.91     |     7/47 Hampton Circuit, Yarralumla
+  11   |   1   |694.01     |709.01     |     16/41 Hampton Circuit, Yarralumla
+  12   |   1   |709.01     |724.01     |     17/41 Hampton Circuit, Yarralumla
+   6   |   1   |   735     |   750     |     11 Hunter Street, Yarralumla
+  13   |   1   |752.53     |767.53     |     221/2 Grose Street, Deakin - The Ambassador
+   2   |   1   |   780     |   795     |     89 Schlich Street, Yarralumla
+  10   |   1   |   840     |   855     |     6/43 Hampton Circuit, Yarralumla
+   4   |   1   |856.87     |871.87     |     115 Schlich Street, Yarralumla
+   1   |   1   |   900     |   915     |     5/51 Musgrave Street, Yarralumla
+
+Path for instance 39
+ LocId | Prize |  Arrival  |   Leave   |     Location
+  20   |   1   |   600     |   615     |     10 Ebenezer Street, Bonython
+   3   |   1   |620.69     |635.69     |     20 Chippindall Circuit, Theodore
+   6   |   1   |637.81     |652.81     |     10 Christmas Street, Theodore
+   7   |   1   |   660     |   675     |     21 Chauncy Crescent, Richardson
+  14   |   1   |677.14     |692.14     |     48 Fullerton Crescent, Richardson
+  11   |   1   |   735     |   750     |     26 Freda Gibson Circuit, Theodore
+   8   |   1   | 751.4     | 766.4     |     9 Christmas Street, Theodore
+  13   |   1   |771.11     |786.11     |     34 Vidal Street, Richardson
+  19   |   1   |790.28     |805.28     |     11 Girdlestone Circuit, Calwell
+   5   |   1   |   810     |   825     |     17/22 Duggan Street, Calwell
+  16   |   1   |828.62     |843.62     |     39 Mentone View, Conder
+   1   |   1   |848.38     |863.38     |     4 Tregear Close, Theodore
+  17   |   1   |   870     |   885     |     68 Twamley Crescent, Richardson
+   2   |   1   |   915     |   930     |     17 Hartung Crescent, Theodore
+
+Path for instance 40
+ LocId | Prize |  Arrival  |   Leave   |     Location
+  11   |   1   |   600     |   615     |     1 Lobb Place, Wanniassa
+  17   |   1   |617.23     |632.23     |     9 Illingworth Street, Wanniassa
+   3   |   1   |637.45     |652.45     |     50 Harrington Circuit, Kambah
+   1   |   1   |   660     |   675     |     41 Sinclair Street, Kambah
+  12   |   1   | 680.2     | 695.2     |     62 Carr Crescent, Wanniassa
+   7   |   1   |698.19     |713.19     |     5/87 Morrison Street, Kambah
+   4   |   1   |   720     |   735     |     186 Boddington Crescent, Kambah
+  10   |   1   |736.85     |751.85     |     4 Vansittart Crescent, Kambah
+   6   |   1   |752.72     |767.72     |     64 O'Halloran Circuit, Kambah
+   8   |   1   |   770     |   785     |     101 O'Halloran Circuit, Kambah
+  15   |   1   |   810     |   825     |     4b Butterley Place, Wanniassa
+   5   |   1   |830.91     |845.91     |     1 Hepburn Place, Kambah
+   2   |   1   |847.56     |862.56     |     35 Barritt Street, Kambah
+  20   |   1   |   870     |   885     |     13/17 Pinkerton Circuit, Kambah
+  13   |   1   |   915     |   930     |     1 Eales Place, Kambah
+
+Path for instance 41
+ LocId | Prize |  Arrival  |   Leave   |     Location
+   9   |   1   |   555     |   570     |     79 Theodore Street, Curtin
+   7   |   1   |572.62     |587.62     |     36/179 Melrose Drive, Lyons
+  11   |   1   |   600     |   615     |     1b Chappell Street, Lyons
+   6   |   1   |617.76     |632.76     |     54 James Street, Curtin
+   4   |   1   |634.62     |649.62     |     7 Irving Street, Phillip
+   2   |   1   |   660     |   675     |     23/6 Marrawah Street, Lyons
+  16   |   1   |677.06     |692.06     |     11 Argyle Place, Curtin
+  10   |   1   |693.78     |708.78     |     35 James Place, Curtin
+   3   |   1   | 709.9     | 724.9     |     127 Theodore Street, Curtin
+  15   |   1   |   730     |   745     |     10/60 Callam Street, Phillip
+   8   |   1   | 746.6     | 761.6     |     58/179 Melrose Drive, Lyons
+  14   |   1   |   810     |   825     |     66 Hilder Street, Weston
+   5   |   1   |830.15     |845.15     |     38/5 Burnie Street, Lyons
+  20   |   1   |848.55     |863.55     |     2/83 Carruthers Street, Curtin
+   1   |   1   |868.05     |883.05     |     3a Olympus Way, Lyons
+  13   |   1   |   910     |   925     |     119/98 Corinna Street, Phillip
+  12   |   1   |928.92     |943.92     |     36 Macalister Crescent, Curtin
+
+Path for instance 42
+ LocId | Prize |  Arrival  |   Leave   |     Location
+   7   |   1   |   570     |   585     |     53/3 London Circuit, Canberra, ACT
+  18   |   1   |   600     |   615     |     5/86-88 Northbourne Avenue, Braddon, ACT
+  15   |   1   |   630     |   645     |     521/74 Northbourne Avenue, Braddon
+   3   |   1   |   660     |   675     |     Nishi, NewActon
+   9   |   1   |675.79     |690.79     |     1002/25 Edinburgh Avenue, Canberra, ACT
+  10   |   1   |690.79     |705.79     |     25 Edinburgh Avenue, Acton - Nishi
+  11   |   1   |705.88     |720.88     |     909/25 Edinburgh Avenue, Canberra
+   5   |   1   |721.85     |736.85     |     604/19 Marcus Clarke Street, City
+   4   |   1   |736.85     |751.85     |     510/19 Marcus Clarke Street, City
+  13   |   1   |754.19     |769.19     |     45/77 Northbourne Avenue, Turner
+   6   |   1   |   840     |   855     |     810/19 Marcus Clarke, Canberra
+  19   |   1   |857.38     |872.38     |     132/15 Coranderrk Street, Canberra, ACT
+  16   |   1   |   885     |   900     |     705/74 Northbourne Avenue, Braddon
+   1   |   1   |  1005     |  1020     |     28/1 Gordon Street, Canberra, ACT
+
+Path for instance 43
+ LocId | Prize |  Arrival  |   Leave   |     Location
+   7   |   1   |   540     |   555     |     2 Littler Place, Banks
+   1   |   1   |   585     |   600     |     40 Forsythe Street, Banks
+   4   |   1   |602.27     |617.27     |     13 Wilson Crescent, Banks
+   6   |   1   |619.54     |634.54     |     11 Galbraith Close, Banks
+  12   |   1   |636.79     |651.79     |     10/6 Kettlewell Crescente, Banks
+  18   |   1   |657.09     |672.09     |     12 Curlew Place, Conder
+  14   |   1   |676.15     |691.15     |     15 Slavin Place, Gordon
+  13   |   1   |692.57     |707.57     |     7/7 Justice Place, Gordon
+   5   |   1   |   720     |   735     |     30 Galbraith Close, Banks
+  16   |   1   |738.53     |753.53     |     7 Olinda Place, Conder
+  19   |   1   |755.99     |770.99     |     20 Ina Gregory Circuit, Conder
+  17   |   1   |   840     |   855     |     36 Loureiro Street, Conder
+   2   |   1   |   870     |   885     |     4 Betty Maloney Crescent, Banks
+  20   |   1   |   900     |   915     |     1/22 Sid Barnes Crescent, Gordon
+   9   |   1   |   930     |   945     |     16 Mcvilly Close, Gordon
+
+Path for instance 44
+ LocId | Prize |  Arrival  |   Leave   |     Location
+  14   |   1   |   540     |   555     |     4/2 Playfair Place, Belconnen
+  17   |   1   |   600     |   615     |     13 Disney Court, Belconnen
+   1   |   1   |   630     |   645     |     148/41 Chandler Street, Belconnen - Altitude
+  11   |   1   |646.55     |661.55     |     120 Eastern Valley Way, Belconnen
+   3   |   1   |   720     |   735     |     214/41 Chandler Street, Belconnen Town Centre - Altitude
+   4   |   1   |735.62     |750.62     |     18/39 Benjamin Way, Belconnen
+   5   |   1   |750.62     |765.62     |     42/39 Benjamin Way, Belconnen - Sentinel
+  10   |   1   |767.73     |782.73     |     Belconnen - Wayfarer
+  13   |   1   |783.36     |798.36     |     99 Eastern Valley Way, Belconnen
+  18   |   1   |   810     |   825     |     28c/21 Beissel Street, Belconnen
+  19   |   1   |   855     |   870     |     51/20 Beissel Street, Belconnen
+   6   |   1   |871.84     |886.84     |     46/39 Benjamin Way, Belconnen - Sentinel
+   8   |   1   |   930     |   945     |     53b/9 Chandler Street, Belconnen
+   2   |   1   | 946.3     | 961.3     |     20/41 Chandler Street, Belconnen - ALTITUDE
+
+Path for instance 45
+ LocId | Prize |  Arrival  |   Leave   |     Location
+   6   |   1   |   585     |   600     |     25 Blacket Street, Downer
+   5   |   1   |601.46     |616.46     |     338/1 Mouat Street, Lyneham
+   4   |   1   |616.46     |631.46     |     330/1 Mouat Street, Lyneham
+   1   |   1   |633.09     |648.09     |     3/22 Archibald Street, Lyneham
+  15   |   1   |651.87     |666.87     |     95 Scrivener Street, O'Connor
+  10   |   1   |669.75     |684.75     |     37c/58 Wattle Street, Lyneham
+  20   |   1   |685.66     |700.66     |     2/27 Berrigan Crescent, O'Connor
+   2   |   1   |704.08     |719.08     |     44/193 Mouat Street, Lyneham
+   8   |   1   |721.42     |736.42     |     6-8 Cape Street, Dickson, ACT
+  12   |   1   |   765     |   780     |     9 Banjine Street, O'Connor
+  18   |   1   |   810     |   825     |     46a Stockdale Street, Dickson
+  14   |   1   |   870     |   885     |     407/241 Northbourne Avenue, Lyneham
+  19   |   1   |887.43     |902.43     |     2 Hope Street, Dickson
+
+Path for instance 46
+ LocId | Prize |  Arrival  |   Leave   |     Location
+   6   |   1   |   555     |   570     |     18/17 Trevillian Quay, Kingston
+  20   |   1   |   600     |   615     |     41/94 Giles Street, Kingston
+   4   |   1   |616.47     |631.47     |     10/11 Trevillian Quay, Kingston - Lakefront
+  16   |   1   | 633.3     | 648.3     |     403/2 Kerridge Street, Kingston, ACT
+   1   |   1   |650.42     |665.42     |     Honeysett View, Kingston - Peninsula at the foreshore
+   7   |   1   |665.78     |680.78     |     8/17 Trevillian Quay, Kingston
+   3   |   1   |680.83     |695.83     |     1/14 Trevillian Quay, Kingston, ACT
+  13   |   1   |697.46     |712.46     |     17a/43-51 Giles Street, Kingston
+  17   |   1   |712.71     |727.71     |     4/8 Howitt Street, Kingston
+  18   |   1   |728.51     |743.51     |     29/47 Eyre Street, Kingston - Wentworth Gardens
+  10   |   1   |744.99     |759.99     |     Honeysett View, Kingston, ACT
+  12   |   1   |   765     |   780     |     162/67 Giles Street, Kingston
+  19   |   1   |781.69     |796.69     |     Kerridge Street, Kingston - Northshore
+   2   |   1   |   810     |   825     |     29/21 Eastlake Parade, Kingston
+  11   |   1   |825.95     |840.95     |     124/50 Eastlake Parade, Kingston
+  14   |   1   |842.13     |857.13     |     30/43-51 Giles Street, Kingston - Wentworth Court
+  15   |   1   |   870     |   885     |     126/53 Eyre Street, Kingston
+
+Path for instance 47
+ LocId | Prize |  Arrival  |   Leave   |     Location
+  19   |   1   |   540     |   555     |     46 Nimbin Street, Narrabundah
+   4   |   1   |   600     |   615     |     10/31 Tallara Parkway, Narrabundah
+   2   |   1   | 616.3     | 631.3     |     39 Jerrabomberra Avenue, Narrabundah
+   1   |   1   | 631.3     | 646.3     |     39 Jerrabomberra Avenue, Narrabundah
+   8   |   1   |648.47     |663.47     |     34 Walker Crescent, Griffith
+  13   |   1   |665.73     |680.73     |     6/55 Stuart Street, Griffith - The Asprey
+  16   |   1   |683.24     |698.24     |     115 Canberra Avenue, Griffith
+  20   |   1   |699.07     |714.07     |     104/72 Wentworth Avenue, Kingston - The Brighton
+  10   |   1   |   720     |   735     |     12 Mckinlay Street, Narrabundah
+  11   |   1   |736.04     |751.04     |     19 Kootara Crescent, Narrabundah
+   9   |   1   | 754.3     | 769.3     |     84 Sprent Street, Narrabundah
+   7   |   1   |772.01     |787.01     |     35 Mckinlay Street, Narrabundah
+  12   |   1   |788.74     |803.74     |     Hely Street, Griffith - The Archer
+  18   |   1   |   825     |   840     |     27/77 Leichhardt Street, Kingston
+   3   |   1   |   870     |   885     |     68/44 Jerrabomberra Avenue, Narrabundah
+
+Path for instance 48
+ LocId | Prize |  Arrival  |   Leave   |     Location
+   2   |   1   |   540     |   555     |     22a Hawdon Street, Ainslie
+   6   |   1   |   615     |   630     |     80 Ebden Street, Ainslie
+   7   |   1   |632.59     |647.59     |     146 Majura Avenue, Ainslie
+  13   |   1   |650.32     |665.32     |     21a Cowper Street, Ainslie
+  14   |   1   |667.31     |682.31     |     10/15-17 Majura Avenue, Dickson
+   3   |   1   |685.55     |700.55     |     26 Hoddle Gardens, Ainslie
+   4   |   1   |703.11     |718.11     |     242 Duffy Street, Ainslie
+  17   |   1   |722.67     |737.67     |     45 Stockdale Street, Dickson
+  16   |   1   |742.66     |757.66     |     5 Campbell Street, Ainslie
+  19   |   1   |   810     |   825     |     46a Stockdale Street, Dickson
+  15   |   1   |   840     |   855     |     12/32 Stockdale Street, Dickson
+  20   |   1   |   870     |   885     |     2 Hope Street, Dickson
+  11   |   1   |886.46     |901.46     |     16 Sherbrooke Street, Ainslie
+   1   |   1   |904.73     |919.73     |     103 Duffy Street, Ainslie
+
+Path for instance 49
+ LocId | Prize |  Arrival  |   Leave   |     Location
+  11   |   1   |   585     |   600     |     11 Bingham Circuit, Kaleen
+  15   |   1   |604.14     |619.14     |     37 Braybrooke Street, Bruce
+   7   |   1   |623.15     |638.15     |     51/88 Narrambla Terrace, Lawson
+  10   |   1   |641.44     |656.44     |     36 Diamantina Crescent, Kaleen
+   3   |   1   |658.71     |673.71     |     Stockman Avenue, Lawson, ACT
+   1   |   1   |674.42     |689.42     |     14 Rouseabout Street, Lawson
+  16   |   1   |693.21     |708.21     |     18 Tandy Close, Bruce
+   2   |   1   |   720     |   735     |     Rouseabout Street, Lawson, ACT
+   5   |   1   |735.62     |750.62     |     3 Jumbuck Crescent, Lawson, ACT
+   8   |   1   |751.88     |766.88     |     Wanderlight Avenue, Lawson
+  17   |   1   |   780     |   795     |     108/8 Baudinette Circuit, Bruce
+  13   |   1   |796.13     |811.13     |     12/1 Eardley Street, Bruce
+  12   |   1   |811.13     |826.13     |     10/1 Eardley Street, Bruce
+   9   |   1   |828.78     |843.78     |     1 Nevertire Street, Lawson, ACT
+   4   |   1   |845.08     |860.08     |     Stockman Avenue, , ACT
+   6   |   1   | 860.6     | 875.6     |     43/2 Pipeclay Street, Lawson, ACT
+

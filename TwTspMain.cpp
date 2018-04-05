@@ -8,6 +8,7 @@
 #include <vector>
 #include "FptSolver.h"
 #include "MlipSolver.h"
+#include "Evaluator.h"
 
 using std::string;
 using std::get;
@@ -16,62 +17,34 @@ using std::endl;
 using std::ofstream;
 using std::cout;
 
-// Takes a .graph data file as input and calculates the
-// optimal tour.
+// Takes a path to a folder with .graph files and an outpath for results,
+// calculates the optimal tours for all data with FPT and MLIP solver
+// and writes runtimes and paths textfiles.
 int main(int argc, char *argv[]) {
   if (argc < 3 || argc > 4) {
-    fprintf(stderr, "Usage 1: ./TwTspMain <filename> <SolverType> [-up]\n");
+    fprintf(stderr, "Usage1: ./TwTspMain <read_path> <write_path>\n");
+    fprintf(stderr, "Usage2: ./TwTspMain <read_path> <write_path> --UP\n");
+    fprintf(stderr, "Usage2 calculates tours with unit prizes for locations\n");
     exit(1);
-  }
-  bool unitPrizes = false;
-  if (argc == 4 && string(argv[3]) == "-up") {
-    unitPrizes = true;
-  }
-  // Build graph and solver.
-  Graph graph;
-  graph.buildFromFile(string(argv[1]), unitPrizes);
-  vector<Location> path;
-  size_t maxPrize;
-  if (string(argv[2]) == "MLIP") {
-    MlipSolver solver = MlipSolver(graph);
-    auto solution = solver.solve();
-    std::cout << "MaxValue: " <<  get<0>(solution) << endl;
-    maxPrize = get<0>(solution);
-    path = get<1>(solution);
-  } else if (string(argv[2]) == "FPT") {
-      FptSolver solver = FptSolver(graph);
-      auto solution = solver.solve();
-      maxPrize = get<0>(solution);
-      auto tourEnd = get<1>(solution);
-      path = solver.getTour(tourEnd);
+  } else if (argc == 3) {
+    Evaluator ev;
+    string inPath = argv[1];
+    string outPath = argv[2];
+    ev.evaluate(inPath);
+    ev.writeResults(outPath);
   } else {
-    cout << "Provide MLIP or FPT as command line Argument for solver type";
-    exit(1);
+    string unitPrize = argv[3];
+    if (unitPrize == "--UP") {
+    Evaluator ev;
+    string inPath = argv[1];
+    string outPath = argv[2];
+    ev.evaluate(inPath, true);
+    ev.writeResults(outPath, true);
+    } else {
+      fprintf(stderr, "%s is not a valid cammand line argument\n", argv[3]);
+      fprintf(stderr, "Use --UP for non unit prizes\n");
+      exit(1);
+    }
   }
-
-  string outFile = string(argv[2]) + "_result" + string(argv[1]);
-  ofstream tourFile(outFile);
-  if (tourFile.is_open()) {
-    tourFile << "Optimal Tour: \n";
-    tourFile << setw(6) << "LocId " << "|" << setw(6) << "Prize " << "|"
-             << setw(10) << "Arrival " << "|" << setw(10) << "Leave " << "|"
-             << setw(10) << "Lat. " << "|" << setw(10)
-             << "Longitude " << "|"
-             << setw(10) << "Address " << endl << endl;
-    for (auto loc : path) {
-      tourFile << setw(6) << loc.id << "|" << setw(6) << loc.prize << "|"
-               << setw(10) << loc.arrival << "|" << setw(10)
-               << loc.leave << "|"
-               << setw(10) << loc.latitude << "|"
-               << setw(10) << loc.longitude << "|"
-               << setw(10) << loc.name << endl;
-    }
-
-    tourFile << endl << "Total Prize: " << maxPrize << "\t"
-             << "Total Length: " << path.size() << endl;
-    tourFile.close();
-  } else {
-    cout << "Unable to open file";
-    }
   return 0;
 }

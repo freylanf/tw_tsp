@@ -1,12 +1,13 @@
 // Copyright 2018
 // Author: Felix Freyland <felix.freyland@gmx.de>
 
+#include "Graph.h"
+#include <boost/algorithm/string.hpp>
 #include <fstream>
 #include <iostream>
 #include <string>
 #include <tuple>
 #include <vector>
-#include "Graph.h"
 
 // ____________________________________________________________________________
 Graph::Graph() {
@@ -125,6 +126,7 @@ void Graph::buildFromFile(const string fileName, const bool unitPrizes) {
     std::getline(file, line);
     if ((file.eof()) || line.at(0) == '#') break;
     vector<double> row;
+    boost::trim_right(line);
     while (true) {
       int pos = line.find(" ");
       if (pos == string::npos) {

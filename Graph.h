@@ -41,7 +41,7 @@ class Graph {
   const vector<size_t>* getDurations() const;
 
   // To read the graph from a text file.
-  void buildFromFile(string fileName, bool unitPrizes = true);
+  void buildFromFile(string fileName, bool unitPrizes = false);
   FRIEND_TEST(GraphTest, buildFromFile);
 
   // Destructor

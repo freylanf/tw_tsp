@@ -1,4 +1,3 @@
-//
 // Copyright 2018
 // Author: Felix Freyland <felix.freyland@gmx.de>
 

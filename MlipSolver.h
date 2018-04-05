@@ -29,7 +29,10 @@ class MlipSolver {
   // Algorithm computing the optimal tour.
   // Returns a tuple containing the value of the otimal tour.
   // and a vector of the locations on the tour.
-  tuple<size_t, vector<Location>> solve();
+  size_t solve(double timeOut = 600.0);
+
+  // To calculate the optimal tour.
+  vector<Location> getTour();
 
   // Destructor
   ~MlipSolver();
@@ -38,9 +41,6 @@ class MlipSolver {
   // To setup the variables, constraints and
   // objective function of the MLIP.
   void setupModel();
-
-  // To calculate the optimal tour.
-  vector<Location> getTour();
 
   Graph _graph;  // The graph to solve.
 

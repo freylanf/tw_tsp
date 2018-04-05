@@ -10,7 +10,7 @@
 // _____________________________________________________________________________
 TEST(FptSolverTest, initConstraints) {
   Graph g;
-  g.buildFromFile("test_data/example_graph2.graph");
+  g.buildFromFile("test_data/example_graph2.graph", true);
   FptSolver solver = FptSolver(g);
   solver.initConstraints();
   ASSERT_EQ(solver._constraints.size(), 3);
@@ -34,7 +34,7 @@ TEST(FptSolverTest, initConstraints) {
 // _____________________________________________________________________________
 TEST(FptSolverTest, checkProhibited) {
   Graph g;
-  g.buildFromFile("test_data/example_graph2.graph");
+  g.buildFromFile("test_data/example_graph2.graph", true);
   FptSolver solver = FptSolver(g);
   solver.initConstraints();
   ASSERT_FALSE(solver.checkProhibited(1, 2, 5));
@@ -43,7 +43,7 @@ TEST(FptSolverTest, checkProhibited) {
 // _____________________________________________________________________________
 TEST(FptSolverTest, solve) {
   Graph g1;
-  g1.buildFromFile("test_data/example_graph2.graph");
+  g1.buildFromFile("test_data/example_graph2.graph", true);
   FptSolver solver1 = FptSolver(g1);
   auto result = solver1.solve();
   ASSERT_EQ(std::get<0>(result), 1);
@@ -51,7 +51,7 @@ TEST(FptSolverTest, solve) {
   ASSERT_EQ(std::get<1>(result), end);
 
   Graph g2;
-  g2.buildFromFile("test_data/example_graph3.graph");
+  g2.buildFromFile("test_data/example_graph3.graph", true);
   FptSolver solver2 = FptSolver(g2);
   auto result2 = solver2.solve();
   ASSERT_EQ(std::get<0>(result2), 3);
@@ -59,7 +59,7 @@ TEST(FptSolverTest, solve) {
   ASSERT_EQ(std::get<1>(result2), end2);
 
   Graph g3;
-  g3.buildFromFile("test_data/example_graph4.graph", false);
+  g3.buildFromFile("test_data/example_graph4.graph");
   FptSolver solver3 = FptSolver(g3);
   auto result3 = solver3.solve();
   ASSERT_EQ(std::get<0>(result3), 12);
@@ -67,7 +67,7 @@ TEST(FptSolverTest, solve) {
   ASSERT_EQ(std::get<1>(result3), end3);
 
   Graph g4;
-  g4.buildFromFile("test_data/example_graph4.graph");
+  g4.buildFromFile("test_data/example_graph4.graph", true);
   FptSolver solver4 = FptSolver(g4);
   auto result4 = solver4.solve();
   ASSERT_EQ(std::get<0>(result4), 3);
@@ -78,7 +78,7 @@ TEST(FptSolverTest, solve) {
 // _____________________________________________________________________________
 TEST(FptSolverTest, updateConstraints) {
   Graph g;
-  g.buildFromFile("test_data/example_graph4.graph");
+  g.buildFromFile("test_data/example_graph4.graph", true);
   FptSolver s = FptSolver(g);
   s.initConstraints();
   tuple<size_t, size_t> pred {0, 0};
